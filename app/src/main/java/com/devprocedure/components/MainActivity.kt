@@ -3,11 +3,19 @@ package com.devprocedure.components
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.height
+import androidx.compose.material3.Button
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
+import androidx.compose.material3.Text
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.dp
+import com.composethemer.ProButtonThemes
 import com.devprocedure.components.ui.theme.ComponentsTheme
+import com.devprocedure.ui.base.button.probutton.ProButton
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,6 +27,30 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
+                    Column {
+                        Text(text = "Hello World!")
+                        Spacer(modifier = Modifier.height(16.dp))
+                        Button(onClick = { }) {
+                            Text(text = "Def Button")
+                        }
+                        Spacer(modifier = Modifier.height(16.dp))
+                        ProButton(
+                            onClick = { },
+                            text = "Pro Button"
+                        )
+                        Spacer(modifier = Modifier.height(16.dp))
+                        ProButton(
+                            onClick = { },
+                            text = "Pro Button Secondary",
+                            theme = ProButtonThemes.Secondary.theme
+                        )
+                        Spacer(modifier = Modifier.height(16.dp))
+                        ProButton(
+                            onClick = { },
+                            text = "Pro Button Secondary",
+                            theme = ProButtonThemes.Tertiary.theme
+                        )
+                    }
                 }
             }
         }
