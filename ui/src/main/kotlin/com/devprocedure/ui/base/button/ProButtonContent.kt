@@ -20,7 +20,7 @@ internal fun ProButtonContent(
 ) {
     leadingIcon?.let {
         Box(
-            Modifier.sizeIn(maxHeight = ProButtonDefaults.ButtonIconSize),
+            Modifier.sizeIn(maxHeight = ProButtonDefaults.ButtonIconSize)
         ) {
             it()
         }
@@ -38,8 +38,8 @@ internal fun ProButtonContent(
                     ProButtonDefaults.ButtonContentSpacing
                 } else {
                     ProButtonDefaults.ButtonContentZeroSpacing
-                },
-            ),
+                }
+            )
     ) {
         ProText(
             text = text,
@@ -49,7 +49,7 @@ internal fun ProButtonContent(
 
     trailingIcon?.let {
         Box(
-            Modifier.sizeIn(maxHeight = ProButtonDefaults.ButtonIconSize),
+            Modifier.sizeIn(maxHeight = ProButtonDefaults.ButtonIconSize)
         ) {
             it()
         }

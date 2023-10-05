@@ -23,7 +23,7 @@ object ProButtonDefaults {
 
     fun buttonContentPadding(
         leadingIcon: Boolean = false,
-        trailingIcon: Boolean = false,
+        trailingIcon: Boolean = false
     ): PaddingValues = PaddingValues(
         start = when {
             leadingIcon -> ButtonHorizontalIconPadding
@@ -34,7 +34,7 @@ object ProButtonDefaults {
             trailingIcon -> ButtonHorizontalIconPadding
             else -> ButtonHorizontalPadding
         },
-        bottom = ButtonVerticalPadding,
+        bottom = ButtonVerticalPadding
     )
 
     @Composable

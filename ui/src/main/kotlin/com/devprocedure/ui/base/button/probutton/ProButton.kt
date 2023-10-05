@@ -25,7 +25,7 @@ private fun ProButton(
         modifier = modifier,
         enabled = enabled,
         colors = colors,
-        contentPadding = contentPadding,
+        contentPadding = contentPadding
     ) {
         content()
     }
