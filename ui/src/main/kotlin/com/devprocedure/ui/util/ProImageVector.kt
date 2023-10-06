@@ -7,5 +7,5 @@ import androidx.compose.ui.graphics.vector.ImageVector
  */
 data class ProImageVector(
     val imageVector: ImageVector,
-    val contentDescription: String? = null,
+    val contentDescription: String? = null
 )
