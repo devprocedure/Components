@@ -7,7 +7,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import com.devprocedure.ui.base.button.ProButtonContent
 import com.devprocedure.ui.base.button.ProButtonDefaults
-import com.devprocedure.ui.util.ProIcon
+import com.devprocedure.ui.util.ProImageVector
 
 /**
  * Created by emre bahadir on 10/5/2023
@@ -38,8 +38,8 @@ fun ProButton(
     modifier: Modifier = Modifier,
     enabled: Boolean = true,
     text: String,
-    leadingIcon: ProIcon? = null,
-    trailingIcon: ProIcon? = null,
+    leadingIcon: ProImageVector? = null,
+    trailingIcon: ProImageVector? = null,
     theme: ProButtonTheme = ProButtonDefaults.filledButtonTheme()
 ) {
     ProButton(

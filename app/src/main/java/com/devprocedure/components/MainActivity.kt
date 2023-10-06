@@ -18,7 +18,7 @@ import androidx.compose.ui.unit.dp
 import com.composethemer.ProTextButtonThemes
 import com.devprocedure.components.ui.theme.ComponentsTheme
 import com.devprocedure.ui.base.button.protextbutton.ProTextButton
-import com.devprocedure.ui.util.ProIcon
+import com.devprocedure.ui.util.ProImageVector
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -40,7 +40,7 @@ class MainActivity : ComponentActivity() {
                         ProTextButton(
                             onClick = { },
                             text = "Pro Button",
-                            leadingIcon = ProIcon(
+                            leadingIcon = ProImageVector(
                                 imageVector = Icons.Filled.Favorite,
                                 contentDescription = null
                             )
@@ -49,7 +49,7 @@ class MainActivity : ComponentActivity() {
                         ProTextButton(
                             onClick = { },
                             text = "Pro Button Secondary",
-                            trailingIcon = ProIcon(
+                            trailingIcon = ProImageVector(
                                 imageVector = Icons.Filled.Favorite,
                                 contentDescription = null
                             ),
@@ -60,11 +60,11 @@ class MainActivity : ComponentActivity() {
                             onClick = { },
                             text = "Pro Button Tertiary",
                             theme = ProTextButtonThemes.Tertiary.theme,
-                            leadingIcon = ProIcon(
+                            leadingIcon = ProImageVector(
                                 imageVector = Icons.Filled.Favorite,
                                 contentDescription = null
                             ),
-                            trailingIcon = ProIcon(
+                            trailingIcon = ProImageVector(
                                 imageVector = Icons.Filled.Favorite,
                                 contentDescription = null
                             )

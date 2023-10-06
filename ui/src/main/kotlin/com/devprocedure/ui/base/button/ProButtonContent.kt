@@ -8,7 +8,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.TextStyle
 import com.devprocedure.ui.base.text.ProText
-import com.devprocedure.ui.util.ProIcon
+import com.devprocedure.ui.util.ProImageVector
 
 /**
  * Created by emre bahadir on 10/5/2023
@@ -17,8 +17,8 @@ import com.devprocedure.ui.util.ProIcon
 internal fun ProButtonContent(
     text: String,
     textStyle: TextStyle,
-    leadingIcon: ProIcon?,
-    trailingIcon: ProIcon?
+    leadingIcon: ProImageVector?,
+    trailingIcon: ProImageVector?
 ) {
     leadingIcon?.let {
         Box(
