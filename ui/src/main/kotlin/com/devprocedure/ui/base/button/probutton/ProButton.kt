@@ -117,3 +117,17 @@ fun ProButtonWithLeadingAndTrailingIconPreview() {
         )
     }
 }
+
+@UiThemePreview
+@Composable
+fun ProButtonDisabledPreview() {
+    ComponentsTheme(
+        dynamicColor = false
+    ) {
+        ProButton(
+            onClick = {},
+            text = "Button",
+            enabled = false
+        )
+    }
+}

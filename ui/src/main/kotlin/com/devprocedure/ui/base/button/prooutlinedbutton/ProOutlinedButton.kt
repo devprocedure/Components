@@ -121,3 +121,17 @@ fun ProOutlinedButtonWithLeadingAndTrailingIconPreview() {
         )
     }
 }
+
+@UiThemePreview
+@Composable
+fun ProOutlinedButtonDisabledPreview() {
+    ComponentsTheme(
+        dynamicColor = false
+    ) {
+        ProOutlinedButton(
+            onClick = {},
+            text = "Button",
+            enabled = false
+        )
+    }
+}
