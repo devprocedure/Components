@@ -35,7 +35,7 @@ fun ProIconPreview() {
     ) {
         ProIcon(
             imageVector = ProImageVector(
-                imageVector = Icons.Default.Add,
+                imageVector = Icons.Default.Add
             )
         )
     }
