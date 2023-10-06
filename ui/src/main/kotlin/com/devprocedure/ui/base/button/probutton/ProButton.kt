@@ -1,6 +1,8 @@
 package com.devprocedure.ui.base.button.probutton
 
 import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Add
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonColors
 import androidx.compose.runtime.Composable
@@ -69,6 +71,49 @@ fun ProButtonPreview() {
         ProButton(
             onClick = {},
             text = "Button"
+        )
+    }
+}
+
+@UiThemePreview
+@Composable
+fun ProButtonWithLeadingIconPreview() {
+    ComponentsTheme(
+        dynamicColor = false
+    ) {
+        ProButton(
+            onClick = {},
+            text = "Button",
+            leadingIcon = ProImageVector(Icons.Default.Add)
+        )
+    }
+}
+
+@UiThemePreview
+@Composable
+fun ProButtonWithTrailingIconPreview() {
+    ComponentsTheme(
+        dynamicColor = false
+    ) {
+        ProButton(
+            onClick = {},
+            text = "Button",
+            trailingIcon = ProImageVector(Icons.Default.Add)
+        )
+    }
+}
+
+@UiThemePreview
+@Composable
+fun ProButtonWithLeadingAndTrailingIconPreview() {
+    ComponentsTheme(
+        dynamicColor = false
+    ) {
+        ProButton(
+            onClick = {},
+            text = "Button",
+            leadingIcon = ProImageVector(Icons.Default.Add),
+            trailingIcon = ProImageVector(Icons.Default.Add)
         )
     }
 }

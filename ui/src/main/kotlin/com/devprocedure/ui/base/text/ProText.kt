@@ -10,6 +10,9 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.TextUnit
+import androidx.compose.ui.unit.dp
+import com.devprocedure.designsystem.theme.ComponentsTheme
+import com.devprocedure.ui.util.UiThemePreview
 
 /**
  * Created by emre bahadir on 10/5/2023
@@ -39,4 +42,16 @@ fun ProText(
         minLines = minLines,
         overflow = overflow
     )
+}
+
+@UiThemePreview
+@Composable
+fun ProTextPreview() {
+    ComponentsTheme(
+        dynamicColor = false
+    ) {
+        ProText(
+            text = "ProText"
+        )
+    }
 }

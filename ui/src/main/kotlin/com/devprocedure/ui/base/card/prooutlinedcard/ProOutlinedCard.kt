@@ -1,10 +1,14 @@
 package com.devprocedure.ui.base.card.prooutlinedcard
 
+import androidx.compose.foundation.layout.size
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.OutlinedCard
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.dp
+import com.devprocedure.designsystem.theme.ComponentsTheme
 import com.devprocedure.ui.base.card.ProCardDefaults
+import com.devprocedure.ui.util.UiThemePreview
 
 /**
  * Created by emre bahadir on 10/6/2023
@@ -43,5 +47,19 @@ fun ProOutlinedCard(
         border = theme.border().value
     ) {
         content()
+    }
+}
+
+@UiThemePreview
+@Composable
+fun ProOutlinedCardPreview() {
+    ComponentsTheme(
+        dynamicColor = false
+    ) {
+        ProOutlinedCard(
+            modifier = Modifier
+                .size(150.dp)
+        ) {
+        }
     }
 }
