@@ -21,7 +21,7 @@ object ProButtonDefaults {
     @Composable
     fun filledButtonTheme() = ProButtonThemes.Primary.theme
 
-    fun buttonContentPadding(
+    internal fun buttonContentPadding(
         leadingIcon: Boolean = false,
         trailingIcon: Boolean = false
     ): PaddingValues = PaddingValues(

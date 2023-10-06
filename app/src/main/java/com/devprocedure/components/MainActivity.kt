@@ -7,6 +7,8 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material3.Button
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
@@ -16,6 +18,7 @@ import androidx.compose.ui.unit.dp
 import com.composethemer.ProButtonThemes
 import com.devprocedure.components.ui.theme.ComponentsTheme
 import com.devprocedure.ui.base.button.probutton.ProButton
+import com.devprocedure.ui.util.ProIcon
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -36,19 +39,35 @@ class MainActivity : ComponentActivity() {
                         Spacer(modifier = Modifier.height(16.dp))
                         ProButton(
                             onClick = { },
-                            text = "Pro Button"
+                            text = "Pro Button",
+                            leadingIcon = ProIcon(
+                                imageVector = Icons.Filled.Favorite,
+                                contentDescription = null
+                            )
                         )
                         Spacer(modifier = Modifier.height(16.dp))
                         ProButton(
                             onClick = { },
                             text = "Pro Button Secondary",
+                            trailingIcon = ProIcon(
+                                imageVector = Icons.Filled.Favorite,
+                                contentDescription = null
+                            ),
                             theme = ProButtonThemes.Secondary.theme
                         )
                         Spacer(modifier = Modifier.height(16.dp))
                         ProButton(
                             onClick = { },
                             text = "Pro Button Secondary",
-                            theme = ProButtonThemes.Tertiary.theme
+                            theme = ProButtonThemes.Tertiary.theme,
+                            leadingIcon = ProIcon(
+                                imageVector = Icons.Filled.Favorite,
+                                contentDescription = null
+                            ),
+                            trailingIcon = ProIcon(
+                                imageVector = Icons.Filled.Favorite,
+                                contentDescription = null
+                            )
                         )
                     }
                 }

@@ -7,6 +7,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import com.devprocedure.ui.base.button.ProButtonContent
 import com.devprocedure.ui.base.button.ProButtonDefaults
+import com.devprocedure.ui.util.ProIcon
 
 /**
  * Created by emre bahadir on 10/5/2023
@@ -37,8 +38,8 @@ fun ProButton(
     modifier: Modifier = Modifier,
     enabled: Boolean = true,
     text: String,
-    leadingIcon: @Composable (() -> Unit)? = null,
-    trailingIcon: @Composable (() -> Unit)? = null,
+    leadingIcon: ProIcon? = null,
+    trailingIcon: ProIcon? = null,
     theme: ProButtonTheme = ProButtonDefaults.filledButtonTheme()
 ) {
     ProButton(
