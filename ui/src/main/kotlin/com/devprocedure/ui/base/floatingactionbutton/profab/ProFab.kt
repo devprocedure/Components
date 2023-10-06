@@ -19,7 +19,7 @@ fun ProFab(
     onClick: () -> Unit,
     modifier: Modifier = Modifier,
     theme: ProFabTheme = ProFabDefaults.floatingActionButtonTheme(),
-    icon: ProImageVector,
+    icon: ProImageVector
 ) {
     FloatingActionButton(
         onClick = onClick,
