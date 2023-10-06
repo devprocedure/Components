@@ -7,17 +7,29 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.width
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material3.Button
+import androidx.compose.material3.Card
+import androidx.compose.material3.ElevatedCard
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.OutlinedCard
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import com.composethemer.ProCardThemes
+import com.composethemer.ProOutlinedCardThemes
 import com.composethemer.ProTextButtonThemes
 import com.devprocedure.components.ui.theme.ComponentsTheme
+import com.devprocedure.ui.base.button.probutton.ProButton
 import com.devprocedure.ui.base.button.protextbutton.ProTextButton
+import com.devprocedure.ui.base.card.procard.ProCard
+import com.devprocedure.ui.base.card.proelevatedcard.ProElevatedCard
+import com.devprocedure.ui.base.card.prooutlinedcard.ProOutlinedCard
+import com.devprocedure.ui.base.text.ProText
 import com.devprocedure.ui.util.ProImageVector
 
 class MainActivity : ComponentActivity() {
@@ -33,42 +45,67 @@ class MainActivity : ComponentActivity() {
                     Column {
                         Text(text = "Hello World!")
                         Spacer(modifier = Modifier.height(16.dp))
-                        Button(onClick = { }) {
-                            Text(text = "Def Button")
+
+                        OutlinedCard(
+                            modifier = Modifier
+                                .height(100.dp)
+                                .width(200.dp)
+                        ) {
+                            Column {
+                                Text(text = "Def Button")
+                                Button(
+                                    onClick = { },
+                                    modifier = Modifier
+                                        .padding(16.dp)
+                                ) {
+                                    Text(text = "Def Button")
+                                }
+                            }
                         }
+
                         Spacer(modifier = Modifier.height(16.dp))
-                        ProTextButton(
-                            onClick = { },
-                            text = "Pro Button",
-                            leadingIcon = ProImageVector(
-                                imageVector = Icons.Filled.Favorite,
-                                contentDescription = null
-                            )
-                        )
+
+                        ProCard(
+                            modifier = Modifier
+                                .height(100.dp)
+                                .width(200.dp)
+                        ) {
+                            Column {
+                                ProText(text = "Pro Button")
+                                ProButton(
+                                    modifier = Modifier
+                                        .padding(16.dp),
+                                    onClick = { },
+                                    text = "Pro Button",
+                                    leadingIcon = ProImageVector(
+                                        imageVector = Icons.Filled.Favorite,
+                                        contentDescription = null
+                                    )
+                                )
+                            }
+                        }
+
                         Spacer(modifier = Modifier.height(16.dp))
-                        ProTextButton(
-                            onClick = { },
-                            text = "Pro Button Secondary",
-                            trailingIcon = ProImageVector(
-                                imageVector = Icons.Filled.Favorite,
-                                contentDescription = null
-                            ),
-                            theme = ProTextButtonThemes.Secondary.theme
-                        )
-                        Spacer(modifier = Modifier.height(16.dp))
-                        ProTextButton(
-                            onClick = { },
-                            text = "Pro Button Tertiary",
-                            theme = ProTextButtonThemes.Tertiary.theme,
-                            leadingIcon = ProImageVector(
-                                imageVector = Icons.Filled.Favorite,
-                                contentDescription = null
-                            ),
-                            trailingIcon = ProImageVector(
-                                imageVector = Icons.Filled.Favorite,
-                                contentDescription = null
-                            )
-                        )
+
+                        ProOutlinedCard(
+                            modifier = Modifier
+                                .height(100.dp)
+                                .width(200.dp)
+                        ) {
+                            Column {
+                                ProText(text = "Pro Button")
+                                ProButton(
+                                    modifier = Modifier
+                                        .padding(16.dp),
+                                    onClick = { },
+                                    text = "Pro Button",
+                                    leadingIcon = ProImageVector(
+                                        imageVector = Icons.Filled.Favorite,
+                                        contentDescription = null
+                                    )
+                                )
+                            }
+                        }
                     }
                 }
             }

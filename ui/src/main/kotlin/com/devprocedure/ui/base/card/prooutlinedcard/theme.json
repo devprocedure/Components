@@ -1,0 +1,110 @@
+{
+  "componentName": "ProOutlinedCard",
+  "componentPackage": "com.devprocedure.ui.base.card.prooutlinedcard",
+  "themeName": "ProOutlinedCardTheme",
+  "themes": [
+    {
+      "Surface": {
+        "properties": [
+          {
+            "key": "containerColor",
+            "type": "Color",
+            "color": {
+              "colorType": "MaterialColor",
+              "value": "surface"
+            }
+          },
+          {
+            "key": "contentColor",
+            "type": "Color",
+            "color": {
+              "colorType": "MaterialContentColor",
+              "value": "surface"
+            }
+          },
+          {
+            "key": "disabledContainerColor",
+            "type": "Color",
+            "color": {
+              "colorType": "MaterialColor",
+              "value": "surface"
+            }
+          },
+          {
+            "key": "disabledContentColor",
+            "type": "Color",
+            "color": {
+              "colorType": "MaterialContentColor",
+              "value": "surface",
+              "alpha": 0.38
+            }
+          },
+          {
+            "key": "defaultElevation",
+            "type": "Dp",
+            "dp": 0
+          },
+          {
+            "key": "pressedElevation",
+            "type": "Dp",
+            "dp": 0
+          },
+          {
+            "key": "focusedElevation",
+            "type": "Dp",
+            "dp": 0
+          },
+          {
+            "key": "hoveredElevation",
+            "type": "Dp",
+            "dp": 0
+          },
+          {
+            "key": "draggedElevation",
+            "type": "Dp",
+            "dp": 6
+          },
+          {
+            "key": "disabledElevation",
+            "type": "Dp",
+            "dp": 0
+          },
+          {
+            "key": "border",
+            "type": "BorderStroke",
+            "border": {
+              "width": 1,
+              "color": {
+                "colorType": "MaterialColor",
+                "value": "outline"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "SurfaceDisable": {
+        "baseTheme": "Surface",
+        "properties": [
+          {
+            "key": "border",
+            "type": "BorderStroke",
+            "border": {
+              "width": 1,
+              "color": {
+                "colorType": "MaterialColor",
+                "value": "outline",
+                "alpha": 0.12,
+                "compositeColor": {
+                  "compositeType": "SurfaceColorAtElevation",
+                  "elevation": 0
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
