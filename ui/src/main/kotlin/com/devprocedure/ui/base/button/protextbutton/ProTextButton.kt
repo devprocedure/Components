@@ -38,12 +38,12 @@ private fun ProTextButton(
 
 @Composable
 fun ProTextButton(
-    onClick: () -> Unit,
-    modifier: Modifier = Modifier,
-    enabled: Boolean = true,
     text: String,
     leadingIcon: ProImageVector? = null,
     trailingIcon: ProImageVector? = null,
+    onClick: () -> Unit,
+    modifier: Modifier = Modifier,
+    enabled: Boolean = true,
     theme: ProTextButtonTheme = ProButtonDefaults.textButtonTheme()
 ) {
     ProTextButton(

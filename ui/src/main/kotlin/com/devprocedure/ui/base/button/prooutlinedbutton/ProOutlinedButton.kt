@@ -41,12 +41,12 @@ private fun ProOutlinedButton(
 
 @Composable
 fun ProOutlinedButton(
-    onClick: () -> Unit,
-    modifier: Modifier = Modifier,
-    enabled: Boolean = true,
     text: String,
     leadingIcon: ProImageVector? = null,
     trailingIcon: ProImageVector? = null,
+    onClick: () -> Unit,
+    modifier: Modifier = Modifier,
+    enabled: Boolean = true,
     theme: ProOutlinedButtonTheme = ProButtonDefaults.outlinedButtonTheme()
 ) {
     ProOutlinedButton(

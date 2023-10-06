@@ -16,10 +16,10 @@ import com.devprocedure.ui.util.UiThemePreview
  */
 @Composable
 fun ProSmallFab(
+    icon: ProImageVector,
     onClick: () -> Unit,
     modifier: Modifier = Modifier,
-    theme: ProSmallFabTheme = ProFabDefaults.smallFloatingActionButtonTheme(),
-    icon: ProImageVector
+    theme: ProSmallFabTheme = ProFabDefaults.smallFloatingActionButtonTheme()
 ) {
     SmallFloatingActionButton(
         onClick = onClick,
