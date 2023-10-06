@@ -18,7 +18,7 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.devprocedure.components.ui.theme.ComponentsTheme
+import com.devprocedure.designsystem.theme.ComponentsTheme
 import com.devprocedure.ui.base.button.probutton.ProButton
 import com.devprocedure.ui.base.card.procard.ProCard
 import com.devprocedure.ui.base.card.prooutlinedcard.ProOutlinedCard
@@ -29,7 +29,9 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            ComponentsTheme {
+            ComponentsTheme(
+                dynamicColor = false
+            ) {
                 // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),

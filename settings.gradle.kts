@@ -22,3 +22,4 @@ dependencyResolutionManagement {
 rootProject.name = "Components"
 include(":app")
 include(":ui")
+include(":designsystem")

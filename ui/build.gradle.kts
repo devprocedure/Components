@@ -41,6 +41,8 @@ kotlin {
 }
 
 dependencies {
+    implementation(project(":designsystem"))
+
     api(libs.androidx.compose.foundation)
     api(libs.androidx.compose.runtime)
     api(libs.androidx.compose.material.iconsExtended)

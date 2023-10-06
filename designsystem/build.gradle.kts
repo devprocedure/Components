@@ -1,25 +1,12 @@
 @Suppress("DSL_SCOPE_VIOLATION") // TODO: Remove once KTIJ-19369 is fixed
 plugins {
-    id(libs.plugins.android.application.get().pluginId)
     id(libs.plugins.kotlin.android.get().pluginId)
+    id(libs.plugins.android.library.get().pluginId)
 }
 
 android {
-    namespace = "com.devprocedure.components"
+    namespace = "com.devprocedure.components.designsystem"
     compileSdk = Configuration.compileSdk
-
-    defaultConfig {
-        applicationId = "com.devprocedure.components"
-        minSdk = Configuration.minSdk
-        targetSdk = Configuration.targetSdk
-        versionCode = Configuration.versionCode
-        versionName = Configuration.versionName
-
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        vectorDrawables {
-            useSupportLibrary = true
-        }
-    }
 
     buildFeatures {
         compose = true
@@ -33,22 +20,9 @@ android {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
     }
-
-    packaging {
-        resources {
-            excludes.add("/META-INF/{AL2.0,LGPL2.1}")
-        }
-    }
-
-    lint {
-        abortOnError = false
-    }
 }
 
 dependencies {
-    implementation(project(":designsystem"))
-    implementation(project(":ui"))
-
     implementation(libs.androidx.activity.compose)
     implementation(libs.androidx.compose.ui)
     implementation(libs.androidx.compose.material3)
