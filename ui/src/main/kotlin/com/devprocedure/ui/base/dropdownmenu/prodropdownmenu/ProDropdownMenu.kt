@@ -19,7 +19,7 @@ fun ProDropdownMenu(
     onItemClicked: (Int) -> Unit,
     modifier: Modifier = Modifier,
     items: List<MenuItem>,
-    theme: ProDropdownMenuTheme = ProDropdownMenuDefaults.dropdownMenuTheme(),
+    theme: ProDropdownMenuTheme = ProDropdownMenuDefaults.dropdownMenuTheme()
 ) {
     DropdownMenu(
         expanded = expanded,
