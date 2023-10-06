@@ -1,0 +1,63 @@
+{
+  "componentName": "ProIcon",
+  "componentPackage": "com.devprocedure.ui.base.icon.proicon",
+  "themeName": "ProIconTheme",
+  "themes": [
+    {
+      "LocalContent": {
+        "properties": [
+          {
+            "key": "tint",
+            "type": "Color",
+            "color": {
+              "colorType": "LocalContentColor",
+              "value": "0"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Primary": {
+        "properties": [
+          {
+            "key": "tint",
+            "type": "Color",
+            "color": {
+              "colorType": "MaterialColor",
+              "value": "primary"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Secondary": {
+        "properties": [
+          {
+            "key": "tint",
+            "type": "Color",
+            "color": {
+              "colorType": "MaterialColor",
+              "value": "secondary"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Tertiary": {
+        "properties": [
+          {
+            "key": "tint",
+            "type": "Color",
+            "color": {
+              "colorType": "MaterialColor",
+              "value": "tertiary"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

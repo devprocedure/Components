@@ -3,10 +3,10 @@ package com.devprocedure.ui.base.button
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.sizeIn
-import androidx.compose.material3.Icon
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.TextStyle
+import com.devprocedure.ui.base.icon.proicon.ProIcon
 import com.devprocedure.ui.base.text.ProText
 import com.devprocedure.ui.util.ProImageVector
 
@@ -24,9 +24,8 @@ internal fun ProButtonContent(
         Box(
             Modifier.sizeIn(maxHeight = ProButtonDefaults.ButtonIconSize)
         ) {
-            Icon(
-                imageVector = it.imageVector,
-                contentDescription = it.contentDescription,
+            ProIcon(
+                imageVector = it
             )
         }
     }
@@ -56,9 +55,8 @@ internal fun ProButtonContent(
         Box(
             Modifier.sizeIn(maxHeight = ProButtonDefaults.ButtonIconSize)
         ) {
-            Icon(
-                imageVector = it.imageVector,
-                contentDescription = it.contentDescription,
+            ProIcon(
+                imageVector = it
             )
         }
     }
