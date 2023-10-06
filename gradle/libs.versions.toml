@@ -1,5 +1,5 @@
 [versions]
-compose-themer = "1.0.0-alpha02"
+compose-themer = "1.0.0-alpha03"
 agp = "8.1.1"
 kotlin = "1.9.0"
 jvmTarget = "17"
