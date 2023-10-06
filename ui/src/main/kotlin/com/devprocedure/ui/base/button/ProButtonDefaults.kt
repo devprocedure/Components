@@ -6,8 +6,10 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.unit.dp
 import com.composethemer.ProButtonThemes
 import com.composethemer.ProOutlinedButtonThemes
+import com.composethemer.ProTextButtonThemes
 import com.devprocedure.ui.base.button.probutton.ProButtonTheme
 import com.devprocedure.ui.base.button.prooutlinedbutton.ProOutlinedButtonTheme
+import com.devprocedure.ui.base.button.protextbutton.ProTextButtonTheme
 
 /**
  * Created by emre bahadir on 10/5/2023
@@ -21,10 +23,13 @@ object ProButtonDefaults {
     val ButtonContentZeroSpacing = 0.dp
 
     @Composable
-    fun filledButtonTheme() = ProButtonThemes.Primary.theme
+    internal fun filledButtonTheme() = ProButtonThemes.Primary.theme
 
     @Composable
-    fun outlinedButtonTheme() = ProOutlinedButtonThemes.Primary.theme
+    internal fun outlinedButtonTheme() = ProOutlinedButtonThemes.Primary.theme
+
+    @Composable
+    internal fun textButtonTheme() = ProTextButtonThemes.Primary.theme
 
     internal fun buttonContentPadding(
         leadingIcon: Boolean = false,
@@ -56,6 +61,16 @@ object ProButtonDefaults {
     internal fun outlinedButtonColors(
         theme: ProOutlinedButtonTheme
     ) = ButtonDefaults.outlinedButtonColors(
+        containerColor = theme.containerColor().value,
+        contentColor = theme.contentColor().value,
+        disabledContainerColor = theme.disabledContainerColor().value,
+        disabledContentColor = theme.disabledContentColor().value
+    )
+
+    @Composable
+    internal fun textButtonColors(
+        theme: ProTextButtonTheme
+    ) = ButtonDefaults.textButtonColors(
         containerColor = theme.containerColor().value,
         contentColor = theme.contentColor().value,
         disabledContainerColor = theme.disabledContainerColor().value,

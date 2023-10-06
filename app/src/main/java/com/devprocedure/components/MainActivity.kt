@@ -15,11 +15,9 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.composethemer.ProButtonThemes
-import com.composethemer.ProOutlinedButtonThemes
+import com.composethemer.ProTextButtonThemes
 import com.devprocedure.components.ui.theme.ComponentsTheme
-import com.devprocedure.ui.base.button.probutton.ProButton
-import com.devprocedure.ui.base.button.prooutlinedbutton.ProOutlinedButton
+import com.devprocedure.ui.base.button.protextbutton.ProTextButton
 import com.devprocedure.ui.util.ProIcon
 
 class MainActivity : ComponentActivity() {
@@ -39,7 +37,7 @@ class MainActivity : ComponentActivity() {
                             Text(text = "Def Button")
                         }
                         Spacer(modifier = Modifier.height(16.dp))
-                        ProOutlinedButton(
+                        ProTextButton(
                             onClick = { },
                             text = "Pro Button",
                             leadingIcon = ProIcon(
@@ -48,20 +46,20 @@ class MainActivity : ComponentActivity() {
                             )
                         )
                         Spacer(modifier = Modifier.height(16.dp))
-                        ProOutlinedButton(
+                        ProTextButton(
                             onClick = { },
                             text = "Pro Button Secondary",
                             trailingIcon = ProIcon(
                                 imageVector = Icons.Filled.Favorite,
                                 contentDescription = null
                             ),
-                            theme = ProOutlinedButtonThemes.Secondary.theme
+                            theme = ProTextButtonThemes.Secondary.theme
                         )
                         Spacer(modifier = Modifier.height(16.dp))
-                        ProOutlinedButton(
+                        ProTextButton(
                             onClick = { },
                             text = "Pro Button Tertiary",
-                            theme = ProOutlinedButtonThemes.Tertiary.theme,
+                            theme = ProTextButtonThemes.Tertiary.theme,
                             leadingIcon = ProIcon(
                                 imageVector = Icons.Filled.Favorite,
                                 contentDescription = null
