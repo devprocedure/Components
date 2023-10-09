@@ -146,7 +146,7 @@ fun ProOutlinedTextFieldPreviewWithValue() {
         ProTextField(
             value = "Value",
             onValueChange = {},
-            label = "Label",
+            label = "Label"
         )
     }
 }
