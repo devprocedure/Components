@@ -1,4 +1,4 @@
-package com.devprocedure.components
+package com.devprocedure.catalog
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity

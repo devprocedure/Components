@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.devprocedure.components"
+    namespace = "com.devprocedure.catalog"
     compileSdk = Configuration.compileSdk
 
     defaultConfig {
-        applicationId = "com.devprocedure.components"
+        applicationId = "com.devprocedure.catalog"
         minSdk = Configuration.minSdk
         targetSdk = Configuration.targetSdk
         versionCode = Configuration.versionCode

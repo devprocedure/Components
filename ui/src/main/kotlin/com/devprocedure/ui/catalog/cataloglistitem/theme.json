@@ -1,0 +1,28 @@
+{
+  "componentName": "CatalogListItem",
+  "componentPackage": "com.devprocedure.ui.catalog.cataloglistitem",
+  "themeName": "CatalogListItemTheme",
+  "themes": [
+    {
+      "Default": {
+        "properties": [
+          {
+            "key": "headlineSize",
+            "type": "Dp",
+            "dp": "48"
+          },
+          {
+            "key": "headlineTextStyle",
+            "type": "TextStyle",
+            "textStyle": "headlineLarge"
+          },
+          {
+            "key": "titleTextStyle",
+            "type": "TextStyle",
+            "textStyle": "titleMedium"
+          }
+        ]
+      }
+    }
+  ]
+}

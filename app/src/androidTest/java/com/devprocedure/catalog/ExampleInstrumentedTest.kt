@@ -1,4 +1,4 @@
-package com.devprocedure.components
+package com.devprocedure.catalog
 
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry
@@ -17,6 +17,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.devprocedure.components", appContext.packageName)
+        assertEquals("com.devprocedure.catalog", appContext.packageName)
     }
 }

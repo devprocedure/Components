@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = "com.devprocedure.components.designsystem"
+    namespace = "com.devprocedure.catalog.designsystem"
     compileSdk = Configuration.compileSdk
 
     buildFeatures {

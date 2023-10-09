@@ -1,4 +1,4 @@
-package com.devprocedure.components
+package com.devprocedure.catalog
 
 import junit.framework.TestCase.assertEquals
 import org.junit.Test
