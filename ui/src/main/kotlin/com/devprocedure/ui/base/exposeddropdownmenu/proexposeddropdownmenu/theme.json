@@ -1,0 +1,21 @@
+{
+  "componentName": "ProExposedDropdownMenu",
+  "componentPackage": "com.devprocedure.ui.base.exposeddropdownmenu.proexposeddropdownmenu",
+  "themeName": "ProExposedDropdownMenuTheme",
+  "themes": [
+    {
+      "OnSurface": {
+        "properties": [
+          {
+            "key": "dropdownMenuItemTheme",
+            "type": "Theme",
+            "viewTheme": {
+              "componentName": "ProDropdownMenuItem",
+              "themeName": "OnSurface"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
