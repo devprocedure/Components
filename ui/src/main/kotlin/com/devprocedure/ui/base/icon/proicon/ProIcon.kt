@@ -5,7 +5,7 @@ import androidx.compose.material.icons.filled.Add
 import androidx.compose.material3.Icon
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import com.devprocedure.designsystem.theme.ComponentsTheme
+import com.devprocedure.designsystem.theme.CatalogTheme
 import com.devprocedure.ui.base.icon.ProIconDefaults
 import com.devprocedure.ui.util.ProImageVector
 import com.devprocedure.ui.util.UiThemePreview
@@ -30,7 +30,7 @@ fun ProIcon(
 @UiThemePreview
 @Composable
 fun ProIconPreview() {
-    ComponentsTheme(
+    CatalogTheme(
         dynamicColor = false
     ) {
         ProIcon(

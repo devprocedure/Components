@@ -5,7 +5,7 @@ import androidx.compose.material.icons.filled.Add
 import androidx.compose.material3.LargeFloatingActionButton
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import com.devprocedure.designsystem.theme.ComponentsTheme
+import com.devprocedure.designsystem.theme.CatalogTheme
 import com.devprocedure.ui.base.floatingactionbutton.ProFabDefaults
 import com.devprocedure.ui.base.icon.proicon.ProIcon
 import com.devprocedure.ui.util.ProImageVector
@@ -37,7 +37,7 @@ fun ProLargeFab(
 @UiThemePreview
 @Composable
 fun ProLargeFabPreview() {
-    ComponentsTheme(
+    CatalogTheme(
         dynamicColor = false
     ) {
         ProLargeFab(

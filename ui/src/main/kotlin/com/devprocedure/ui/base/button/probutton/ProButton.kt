@@ -7,7 +7,7 @@ import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonColors
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import com.devprocedure.designsystem.theme.ComponentsTheme
+import com.devprocedure.designsystem.theme.CatalogTheme
 import com.devprocedure.ui.base.button.ProButtonContent
 import com.devprocedure.ui.base.button.ProButtonDefaults
 import com.devprocedure.ui.util.ProImageVector
@@ -65,7 +65,7 @@ fun ProButton(
 @UiThemePreview
 @Composable
 fun ProButtonPreview() {
-    ComponentsTheme(
+    CatalogTheme(
         dynamicColor = false
     ) {
         ProButton(
@@ -78,7 +78,7 @@ fun ProButtonPreview() {
 @UiThemePreview
 @Composable
 fun ProButtonWithLeadingIconPreview() {
-    ComponentsTheme(
+    CatalogTheme(
         dynamicColor = false
     ) {
         ProButton(
@@ -92,7 +92,7 @@ fun ProButtonWithLeadingIconPreview() {
 @UiThemePreview
 @Composable
 fun ProButtonWithTrailingIconPreview() {
-    ComponentsTheme(
+    CatalogTheme(
         dynamicColor = false
     ) {
         ProButton(
@@ -106,7 +106,7 @@ fun ProButtonWithTrailingIconPreview() {
 @UiThemePreview
 @Composable
 fun ProButtonWithLeadingAndTrailingIconPreview() {
-    ComponentsTheme(
+    CatalogTheme(
         dynamicColor = false
     ) {
         ProButton(
@@ -121,7 +121,7 @@ fun ProButtonWithLeadingAndTrailingIconPreview() {
 @UiThemePreview
 @Composable
 fun ProButtonDisabledPreview() {
-    ComponentsTheme(
+    CatalogTheme(
         dynamicColor = false
     ) {
         ProButton(

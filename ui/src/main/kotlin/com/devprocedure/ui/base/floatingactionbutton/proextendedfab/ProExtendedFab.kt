@@ -5,7 +5,7 @@ import androidx.compose.material.icons.filled.Add
 import androidx.compose.material3.ExtendedFloatingActionButton
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import com.devprocedure.designsystem.theme.ComponentsTheme
+import com.devprocedure.designsystem.theme.CatalogTheme
 import com.devprocedure.ui.base.floatingactionbutton.ProFabDefaults
 import com.devprocedure.ui.base.icon.proicon.ProIcon
 import com.devprocedure.ui.base.text.ProText
@@ -47,7 +47,7 @@ fun ProExtendedFab(
 @UiThemePreview
 @Composable
 fun ProExtendedFabPreview() {
-    ComponentsTheme(
+    CatalogTheme(
         dynamicColor = false
     ) {
         ProExtendedFab(
@@ -63,7 +63,7 @@ fun ProExtendedFabPreview() {
 @UiThemePreview
 @Composable
 fun ProExtendedFabNotExpandedPreview() {
-    ComponentsTheme(
+    CatalogTheme(
         dynamicColor = false
     ) {
         ProExtendedFab(

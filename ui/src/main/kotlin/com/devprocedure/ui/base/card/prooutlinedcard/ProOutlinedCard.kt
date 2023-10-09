@@ -6,7 +6,7 @@ import androidx.compose.material3.OutlinedCard
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.devprocedure.designsystem.theme.ComponentsTheme
+import com.devprocedure.designsystem.theme.CatalogTheme
 import com.devprocedure.ui.base.card.ProCardDefaults
 import com.devprocedure.ui.util.UiThemePreview
 
@@ -53,7 +53,7 @@ fun ProOutlinedCard(
 @UiThemePreview
 @Composable
 fun ProOutlinedCardPreview() {
-    ComponentsTheme(
+    CatalogTheme(
         dynamicColor = false
     ) {
         ProOutlinedCard(

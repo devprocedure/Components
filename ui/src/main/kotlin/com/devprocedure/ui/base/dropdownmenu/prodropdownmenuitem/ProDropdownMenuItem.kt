@@ -5,7 +5,7 @@ import androidx.compose.material.icons.filled.Add
 import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import com.devprocedure.designsystem.theme.ComponentsTheme
+import com.devprocedure.designsystem.theme.CatalogTheme
 import com.devprocedure.ui.base.dropdownmenu.ProDropdownMenuDefaults
 import com.devprocedure.ui.base.icon.proicon.ProIcon
 import com.devprocedure.ui.base.text.ProText
@@ -57,7 +57,7 @@ fun ProDropdownMenuItem(
 @UiThemePreview
 @Composable
 fun ProDropdownMenuItemPreview() {
-    ComponentsTheme(
+    CatalogTheme(
         dynamicColor = false
     ) {
         ProDropdownMenuItem(
@@ -70,7 +70,7 @@ fun ProDropdownMenuItemPreview() {
 @UiThemePreview
 @Composable
 fun ProDropdownMenuItemWithLeadingIconPreview() {
-    ComponentsTheme(
+    CatalogTheme(
         dynamicColor = false
     ) {
         ProDropdownMenuItem(
@@ -86,7 +86,7 @@ fun ProDropdownMenuItemWithLeadingIconPreview() {
 @UiThemePreview
 @Composable
 fun ProDropdownMenuItemWithTrailingIconPreview() {
-    ComponentsTheme(
+    CatalogTheme(
         dynamicColor = false
     ) {
         ProDropdownMenuItem(
@@ -102,7 +102,7 @@ fun ProDropdownMenuItemWithTrailingIconPreview() {
 @UiThemePreview
 @Composable
 fun ProDropdownMenuItemWithLeadingAndTrailingIconPreview() {
-    ComponentsTheme(
+    CatalogTheme(
         dynamicColor = false
     ) {
         ProDropdownMenuItem(
@@ -121,7 +121,7 @@ fun ProDropdownMenuItemWithLeadingAndTrailingIconPreview() {
 @UiThemePreview
 @Composable
 fun ProDropdownMenuItemDisabledPreview() {
-    ComponentsTheme(
+    CatalogTheme(
         dynamicColor = false
     ) {
         ProDropdownMenuItem(

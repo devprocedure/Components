@@ -8,7 +8,7 @@ import androidx.compose.material3.ButtonColors
 import androidx.compose.material3.OutlinedButton
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import com.devprocedure.designsystem.theme.ComponentsTheme
+import com.devprocedure.designsystem.theme.CatalogTheme
 import com.devprocedure.ui.base.button.ProButtonContent
 import com.devprocedure.ui.base.button.ProButtonDefaults
 import com.devprocedure.ui.util.ProImageVector
@@ -69,7 +69,7 @@ fun ProOutlinedButton(
 @UiThemePreview
 @Composable
 fun ProOutlinedButtonPreview() {
-    ComponentsTheme(
+    CatalogTheme(
         dynamicColor = false
     ) {
         ProOutlinedButton(
@@ -82,7 +82,7 @@ fun ProOutlinedButtonPreview() {
 @UiThemePreview
 @Composable
 fun ProOutlinedButtonWithLeadingIconPreview() {
-    ComponentsTheme(
+    CatalogTheme(
         dynamicColor = false
     ) {
         ProOutlinedButton(
@@ -96,7 +96,7 @@ fun ProOutlinedButtonWithLeadingIconPreview() {
 @UiThemePreview
 @Composable
 fun ProOutlinedButtonWithTrailingIconPreview() {
-    ComponentsTheme(
+    CatalogTheme(
         dynamicColor = false
     ) {
         ProOutlinedButton(
@@ -110,7 +110,7 @@ fun ProOutlinedButtonWithTrailingIconPreview() {
 @UiThemePreview
 @Composable
 fun ProOutlinedButtonWithLeadingAndTrailingIconPreview() {
-    ComponentsTheme(
+    CatalogTheme(
         dynamicColor = false
     ) {
         ProOutlinedButton(
@@ -125,7 +125,7 @@ fun ProOutlinedButtonWithLeadingAndTrailingIconPreview() {
 @UiThemePreview
 @Composable
 fun ProOutlinedButtonDisabledPreview() {
-    ComponentsTheme(
+    CatalogTheme(
         dynamicColor = false
     ) {
         ProOutlinedButton(

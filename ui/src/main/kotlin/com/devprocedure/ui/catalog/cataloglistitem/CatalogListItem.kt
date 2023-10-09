@@ -14,7 +14,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.composethemer.CatalogListItemThemes
-import com.devprocedure.designsystem.theme.ComponentsTheme
+import com.devprocedure.designsystem.theme.CatalogTheme
 import com.devprocedure.ui.base.card.procard.ProCard
 import com.devprocedure.ui.base.card.proelevatedcard.ProElevatedCard
 import com.devprocedure.ui.base.icon.proicon.ProIcon
@@ -84,7 +84,7 @@ fun CatalogListItem(
 @UiThemePreview
 @Composable
 fun CatalogListItemPreview() {
-    ComponentsTheme(
+    CatalogTheme(
         dynamicColor = false
     ) {
         CatalogListItem(

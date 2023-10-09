@@ -6,7 +6,7 @@ import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.devprocedure.designsystem.theme.ComponentsTheme
+import com.devprocedure.designsystem.theme.CatalogTheme
 import com.devprocedure.ui.base.card.ProCardDefaults
 import com.devprocedure.ui.util.UiThemePreview
 
@@ -51,7 +51,7 @@ fun ProElevatedCard(
 @UiThemePreview
 @Composable
 fun ProElevatedCardPreview() {
-    ComponentsTheme(
+    CatalogTheme(
         dynamicColor = false
     ) {
         ProElevatedCard(

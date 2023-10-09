@@ -8,7 +8,7 @@ import androidx.compose.material3.TextField
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.input.VisualTransformation
-import com.devprocedure.designsystem.theme.ComponentsTheme
+import com.devprocedure.designsystem.theme.CatalogTheme
 import com.devprocedure.ui.base.icon.proicon.ProIcon
 import com.devprocedure.ui.base.text.ProText
 import com.devprocedure.ui.base.textfield.ProTextFieldDefaults
@@ -111,7 +111,7 @@ fun ProTextField(
 @UiThemePreview
 @Composable
 fun ProOutlinedTextFieldPreview() {
-    ComponentsTheme(
+    CatalogTheme(
         dynamicColor = false
     ) {
         ProTextField(
@@ -125,7 +125,7 @@ fun ProOutlinedTextFieldPreview() {
 @UiThemePreview
 @Composable
 fun ProOutlinedTextFieldPreviewError() {
-    ComponentsTheme(
+    CatalogTheme(
         dynamicColor = false
     ) {
         ProTextField(
@@ -140,7 +140,7 @@ fun ProOutlinedTextFieldPreviewError() {
 @UiThemePreview
 @Composable
 fun ProOutlinedTextFieldPreviewWithValue() {
-    ComponentsTheme(
+    CatalogTheme(
         dynamicColor = false
     ) {
         ProTextField(
@@ -154,7 +154,7 @@ fun ProOutlinedTextFieldPreviewWithValue() {
 @UiThemePreview
 @Composable
 fun ProOutlinedTextFieldPreviewWithSupportingText() {
-    ComponentsTheme(
+    CatalogTheme(
         dynamicColor = false
     ) {
         ProTextField(
@@ -169,7 +169,7 @@ fun ProOutlinedTextFieldPreviewWithSupportingText() {
 @UiThemePreview
 @Composable
 fun ProOutlinedTextFieldPreviewWithPrefixAndSuffix() {
-    ComponentsTheme(
+    CatalogTheme(
         dynamicColor = false
     ) {
         ProTextField(
@@ -185,7 +185,7 @@ fun ProOutlinedTextFieldPreviewWithPrefixAndSuffix() {
 @UiThemePreview
 @Composable
 fun ProOutlinedTextFieldPreviewWithLeadingAndTrailingIcon() {
-    ComponentsTheme(
+    CatalogTheme(
         dynamicColor = false
     ) {
         ProTextField(
