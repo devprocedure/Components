@@ -4,7 +4,7 @@ import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.ExposedDropdownMenuBoxScope
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import com.devprocedure.ui.base.dropdownmenu.prodropdownmenuitem.MenuItem
+import com.devprocedure.ui.base.dropdownmenu.prodropdownmenuitem.DropdownMenuItem
 import com.devprocedure.ui.base.dropdownmenu.prodropdownmenuitem.ProDropdownMenuItem
 import com.devprocedure.ui.base.exposeddropdownmenu.ProExposedDropdownMenuDefaults
 import com.devprocedure.ui.base.exposeddropdownmenu.proexposeddropdownmenu.ProExposedDropdownMenuTheme
@@ -19,7 +19,7 @@ fun ExposedDropdownMenuBoxScope.ProExposedDropdownMenu(
     onDismissRequest: () -> Unit,
     onItemClicked: (Int) -> Unit,
     modifier: Modifier = Modifier,
-    items: List<MenuItem>,
+    items: List<DropdownMenuItem>,
     theme: ProExposedDropdownMenuTheme = ProExposedDropdownMenuDefaults.dropdownMenuTheme()
 ) {
     ExposedDropdownMenu(

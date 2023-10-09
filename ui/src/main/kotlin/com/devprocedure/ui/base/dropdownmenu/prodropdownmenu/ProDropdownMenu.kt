@@ -6,7 +6,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.DpOffset
 import androidx.compose.ui.unit.dp
 import com.devprocedure.ui.base.dropdownmenu.ProDropdownMenuDefaults
-import com.devprocedure.ui.base.dropdownmenu.prodropdownmenuitem.MenuItem
+import com.devprocedure.ui.base.dropdownmenu.prodropdownmenuitem.DropdownMenuItem
 import com.devprocedure.ui.base.dropdownmenu.prodropdownmenuitem.ProDropdownMenuItem
 
 /**
@@ -18,7 +18,7 @@ fun ProDropdownMenu(
     onDismissRequest: () -> Unit,
     onItemClicked: (Int) -> Unit,
     modifier: Modifier = Modifier,
-    items: List<MenuItem>,
+    items: List<DropdownMenuItem>,
     theme: ProDropdownMenuTheme = ProDropdownMenuDefaults.dropdownMenuTheme()
 ) {
     DropdownMenu(
