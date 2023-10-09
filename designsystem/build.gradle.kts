@@ -8,6 +8,10 @@ android {
     namespace = "com.devprocedure.catalog.designsystem"
     compileSdk = Configuration.compileSdk
 
+    defaultConfig {
+        minSdk = Configuration.minSdk
+    }
+
     buildFeatures {
         compose = true
     }
