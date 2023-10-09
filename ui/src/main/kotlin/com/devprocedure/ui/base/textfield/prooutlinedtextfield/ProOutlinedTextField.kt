@@ -2,14 +2,18 @@ package com.devprocedure.ui.base.textfield.prooutlinedtextfield
 
 import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Add
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.input.VisualTransformation
+import com.devprocedure.designsystem.theme.ComponentsTheme
 import com.devprocedure.ui.base.icon.proicon.ProIcon
 import com.devprocedure.ui.base.text.ProText
 import com.devprocedure.ui.base.textfield.ProTextFieldDefaults
 import com.devprocedure.ui.util.ProImageVector
+import com.devprocedure.ui.util.UiThemePreview
 
 /**
  * Created by emre bahadir on 10/6/2023
@@ -102,4 +106,98 @@ fun ProOutlinedTextField(
         minLines = minLines,
         colors = ProTextFieldDefaults.outlinedTextFieldColors(theme)
     )
+}
+
+@UiThemePreview
+@Composable
+fun ProOutlinedTextFieldPreview() {
+    ComponentsTheme(
+        dynamicColor = false
+    ) {
+        ProOutlinedTextField(
+            value = "",
+            onValueChange = {},
+            label = "Label"
+        )
+    }
+}
+
+@UiThemePreview
+@Composable
+fun ProOutlinedTextFieldPreviewError() {
+    ComponentsTheme(
+        dynamicColor = false
+    ) {
+        ProOutlinedTextField(
+            value = "",
+            onValueChange = {},
+            label = "Label",
+            isError = true
+        )
+    }
+}
+
+@UiThemePreview
+@Composable
+fun ProOutlinedTextFieldPreviewWithValue() {
+    ComponentsTheme(
+        dynamicColor = false
+    ) {
+        ProOutlinedTextField(
+            value = "Value",
+            onValueChange = {},
+            label = "Label",
+        )
+    }
+}
+
+@UiThemePreview
+@Composable
+fun ProOutlinedTextFieldPreviewWithSupportingText() {
+    ComponentsTheme(
+        dynamicColor = false
+    ) {
+        ProOutlinedTextField(
+            value = "",
+            onValueChange = {},
+            label = "Label",
+            supportingText = "Supporting Text"
+        )
+    }
+}
+
+@UiThemePreview
+@Composable
+fun ProOutlinedTextFieldPreviewWithPrefixAndSuffix() {
+    ComponentsTheme(
+        dynamicColor = false
+    ) {
+        ProOutlinedTextField(
+            value = "Value",
+            onValueChange = {},
+            label = "Label",
+            prefix = "PRE",
+            suffix = "SUF"
+        )
+    }
+}
+
+@UiThemePreview
+@Composable
+fun ProOutlinedTextFieldPreviewWithLeadingAndTrailingIcon() {
+    ComponentsTheme(
+        dynamicColor = false
+    ) {
+        ProOutlinedTextField(
+            value = "",
+            onValueChange = {},
+            label = "Label",
+            leadingIcon = ProImageVector(
+                imageVector = Icons.Default.Add
+            ),
+            trailingIcon = ProImageVector(
+                imageVector = Icons.Default.Add
+            )
+        )
+    }
 }
