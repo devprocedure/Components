@@ -7,9 +7,9 @@ import androidx.compose.ui.unit.dp
 import com.composethemer.ProButtonThemes
 import com.composethemer.ProOutlinedButtonThemes
 import com.composethemer.ProTextButtonThemes
-import com.devprocedure.ui.base.button.probutton.ProButtonTheme
-import com.devprocedure.ui.base.button.prooutlinedbutton.ProOutlinedButtonTheme
-import com.devprocedure.ui.base.button.protextbutton.ProTextButtonTheme
+import com.devprocedure.ui.base.button.button.ProButtonTheme
+import com.devprocedure.ui.base.button.outlinedbutton.ProOutlinedButtonTheme
+import com.devprocedure.ui.base.button.textbutton.ProTextButtonTheme
 
 /**
  * Created by emre bahadir on 10/5/2023

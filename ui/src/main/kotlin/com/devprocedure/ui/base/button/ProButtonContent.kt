@@ -6,7 +6,7 @@ import androidx.compose.foundation.layout.sizeIn
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.TextStyle
-import com.devprocedure.ui.base.icon.proicon.ProIcon
+import com.devprocedure.ui.base.icon.icon.ProIcon
 import com.devprocedure.ui.base.text.ProText
 import com.devprocedure.ui.util.ProImageVector
 

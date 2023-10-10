@@ -2,34 +2,34 @@ package com.devprocedure.ui.base.floatingactionbutton
 
 import androidx.compose.material3.FloatingActionButtonDefaults
 import androidx.compose.runtime.Composable
-import com.composethemer.ProExtendedFabThemes
-import com.composethemer.ProFabThemes
-import com.composethemer.ProLargeFabThemes
-import com.composethemer.ProSmallFabThemes
-import com.devprocedure.ui.base.floatingactionbutton.proextendedfab.ProExtendedFabTheme
-import com.devprocedure.ui.base.floatingactionbutton.profab.ProFabTheme
-import com.devprocedure.ui.base.floatingactionbutton.prolargefab.ProLargeFabTheme
-import com.devprocedure.ui.base.floatingactionbutton.prosmallfab.ProSmallFabTheme
+import com.composethemer.ProExtendedFloatingActionButtonThemes
+import com.composethemer.ProFloatingActionButtonThemes
+import com.composethemer.ProLargeFloatingActionButtonThemes
+import com.composethemer.ProSmallFloatingActionButtonThemes
+import com.devprocedure.ui.base.floatingactionbutton.extendedfloatingactionbutton.ProExtendedFloatingActionButtonTheme
+import com.devprocedure.ui.base.floatingactionbutton.floatingactionbutton.ProFloatingActionButtonTheme
+import com.devprocedure.ui.base.floatingactionbutton.largefloatingactionbutton.ProLargeFloatingActionButtonTheme
+import com.devprocedure.ui.base.floatingactionbutton.smallfloatingactionbutton.ProSmallFloatingActionButtonTheme
 
 /**
  * Created by emre bahadir on 10/6/2023
  */
 object ProFabDefaults {
     @Composable
-    internal fun floatingActionButtonTheme() = ProFabThemes.PrimaryContainer.theme
+    internal fun floatingActionButtonTheme() = ProFloatingActionButtonThemes.PrimaryContainer.theme
 
     @Composable
-    internal fun smallFloatingActionButtonTheme() = ProSmallFabThemes.PrimaryContainer.theme
+    internal fun smallFloatingActionButtonTheme() = ProSmallFloatingActionButtonThemes.PrimaryContainer.theme
 
     @Composable
-    internal fun largeFloatingActionButtonTheme() = ProLargeFabThemes.PrimaryContainer.theme
+    internal fun largeFloatingActionButtonTheme() = ProLargeFloatingActionButtonThemes.PrimaryContainer.theme
 
     @Composable
-    internal fun extendedFloatingActionButtonTheme() = ProExtendedFabThemes.PrimaryContainer.theme
+    internal fun extendedFloatingActionButtonTheme() = ProExtendedFloatingActionButtonThemes.PrimaryContainer.theme
 
     @Composable
     internal fun floatingActionButtonElevation(
-        theme: ProFabTheme
+        theme: ProFloatingActionButtonTheme
     ) = FloatingActionButtonDefaults.elevation(
         defaultElevation = theme.defaultElevation().value,
         pressedElevation = theme.pressedElevation().value,
@@ -39,7 +39,7 @@ object ProFabDefaults {
 
     @Composable
     internal fun smallFloatingActionButtonElevation(
-        theme: ProSmallFabTheme
+        theme: ProSmallFloatingActionButtonTheme
     ) = FloatingActionButtonDefaults.elevation(
         defaultElevation = theme.defaultElevation().value,
         pressedElevation = theme.pressedElevation().value,
@@ -49,7 +49,7 @@ object ProFabDefaults {
 
     @Composable
     internal fun largeFloatingActionButtonElevation(
-        theme: ProLargeFabTheme
+        theme: ProLargeFloatingActionButtonTheme
     ) = FloatingActionButtonDefaults.elevation(
         defaultElevation = theme.defaultElevation().value,
         pressedElevation = theme.pressedElevation().value,
@@ -59,7 +59,7 @@ object ProFabDefaults {
 
     @Composable
     internal fun extendedFloatingActionButtonElevation(
-        theme: ProExtendedFabTheme
+        theme: ProExtendedFloatingActionButtonTheme
     ) = FloatingActionButtonDefaults.elevation(
         defaultElevation = theme.defaultElevation().value,
         pressedElevation = theme.pressedElevation().value,

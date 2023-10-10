@@ -1,0 +1,81 @@
+{
+  "componentName": "ProCard",
+  "componentPackage": "com.devprocedure.ui.base.card.card",
+  "themeName": "ProCardTheme",
+  "themes": [
+    {
+      "SurfaceVariant": {
+        "properties": [
+          {
+            "key": "containerColor",
+            "type": "Color",
+            "color": {
+              "colorType": "MaterialColor",
+              "value": "surfaceVariant"
+            }
+          },
+          {
+            "key": "contentColor",
+            "type": "Color",
+            "color": {
+              "colorType": "MaterialContentColor",
+              "value": "surfaceVariant"
+            }
+          },
+          {
+            "key": "disabledContainerColor",
+            "type": "Color",
+            "color": {
+              "colorType": "MaterialColor",
+              "value": "surfaceVariant",
+              "alpha": 0.38,
+              "compositeColor": {
+                "compositeType": "SurfaceColorAtElevation",
+                "elevation": 0
+              }
+            }
+          },
+          {
+            "key": "disabledContentColor",
+            "type": "Color",
+            "color": {
+              "colorType": "MaterialContentColor",
+              "value": "surfaceVariant",
+              "alpha": 0.38
+            }
+          },
+          {
+            "key": "defaultElevation",
+            "type": "Dp",
+            "dp": 0
+          },
+          {
+            "key": "pressedElevation",
+            "type": "Dp",
+            "dp": 0
+          },
+          {
+            "key": "focusedElevation",
+            "type": "Dp",
+            "dp": 0
+          },
+          {
+            "key": "hoveredElevation",
+            "type": "Dp",
+            "dp": 1
+          },
+          {
+            "key": "draggedElevation",
+            "type": "Dp",
+            "dp": 6
+          },
+          {
+            "key": "disabledElevation",
+            "type": "Dp",
+            "dp": 0
+          }
+        ]
+      }
+    }
+  ]
+}

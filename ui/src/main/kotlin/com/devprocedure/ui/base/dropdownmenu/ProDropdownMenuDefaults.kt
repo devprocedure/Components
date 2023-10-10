@@ -4,7 +4,7 @@ import androidx.compose.material3.MenuDefaults
 import androidx.compose.runtime.Composable
 import com.composethemer.ProDropdownMenuItemThemes
 import com.composethemer.ProDropdownMenuThemes
-import com.devprocedure.ui.base.dropdownmenu.prodropdownmenuitem.ProDropdownMenuItemTheme
+import com.devprocedure.ui.base.dropdownmenu.dropdownmenuitem.ProDropdownMenuItemTheme
 
 /**
  * Created by emre bahadir on 10/6/2023

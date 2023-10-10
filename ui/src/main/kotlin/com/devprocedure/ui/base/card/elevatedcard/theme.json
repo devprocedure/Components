@@ -1,0 +1,81 @@
+{
+  "componentName": "ProElevatedCard",
+  "componentPackage": "com.devprocedure.ui.base.card.elevatedcard",
+  "themeName": "ProElevatedCardTheme",
+  "themes": [
+    {
+      "Surface": {
+        "properties": [
+          {
+            "key": "containerColor",
+            "type": "Color",
+            "color": {
+              "colorType": "MaterialColor",
+              "value": "surface"
+            }
+          },
+          {
+            "key": "contentColor",
+            "type": "Color",
+            "color": {
+              "colorType": "MaterialContentColor",
+              "value": "surface"
+            }
+          },
+          {
+            "key": "disabledContainerColor",
+            "type": "Color",
+            "color": {
+              "colorType": "MaterialColor",
+              "value": "surface",
+              "alpha": 0.38,
+              "compositeColor": {
+                "compositeType": "SurfaceColorAtElevation",
+                "elevation": 1
+              }
+            }
+          },
+          {
+            "key": "disabledContentColor",
+            "type": "Color",
+            "color": {
+              "colorType": "MaterialContentColor",
+              "value": "surface",
+              "alpha": 0.38
+            }
+          },
+          {
+            "key": "defaultElevation",
+            "type": "Dp",
+            "dp": 1
+          },
+          {
+            "key": "pressedElevation",
+            "type": "Dp",
+            "dp": 1
+          },
+          {
+            "key": "focusedElevation",
+            "type": "Dp",
+            "dp": 1
+          },
+          {
+            "key": "hoveredElevation",
+            "type": "Dp",
+            "dp": 3
+          },
+          {
+            "key": "draggedElevation",
+            "type": "Dp",
+            "dp": 8
+          },
+          {
+            "key": "disabledElevation",
+            "type": "Dp",
+            "dp": 1
+          }
+        ]
+      }
+    }
+  ]
+}

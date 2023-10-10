@@ -5,9 +5,9 @@ import androidx.compose.runtime.Composable
 import com.composethemer.ProCardThemes
 import com.composethemer.ProElevatedCardThemes
 import com.composethemer.ProOutlinedCardThemes
-import com.devprocedure.ui.base.card.procard.ProCardTheme
-import com.devprocedure.ui.base.card.proelevatedcard.ProElevatedCardTheme
-import com.devprocedure.ui.base.card.prooutlinedcard.ProOutlinedCardTheme
+import com.devprocedure.ui.base.card.card.ProCardTheme
+import com.devprocedure.ui.base.card.elevatedcard.ProElevatedCardTheme
+import com.devprocedure.ui.base.card.outlinedcard.ProOutlinedCardTheme
 
 /**
  * Created by emre bahadir on 10/6/2023

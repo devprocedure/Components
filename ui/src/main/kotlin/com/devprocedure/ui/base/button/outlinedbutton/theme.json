@@ -1,0 +1,92 @@
+{
+  "componentName": "ProOutlinedButton",
+  "componentPackage": "com.devprocedure.ui.base.button.outlinedbutton",
+  "themeName": "ProOutlinedButtonTheme",
+  "themes": [
+    {
+      "Primary": {
+        "properties": [
+          {
+            "key": "containerColor",
+            "type": "Color",
+            "color": {
+              "colorType": "HexColor",
+              "value": "0x00000000"
+            }
+          },
+          {
+            "key": "contentColor",
+            "type": "Color",
+            "color": {
+              "colorType": "MaterialColor",
+              "value": "primary"
+            }
+          },
+          {
+            "key": "disabledContainerColor",
+            "type": "Color",
+            "color": {
+              "colorType": "HexColor",
+              "value": "0x00000000"
+            }
+          },
+          {
+            "key": "disabledContentColor",
+            "type": "Color",
+            "color": {
+              "colorType": "MaterialColor",
+              "value": "onSurface",
+              "alpha": 0.38
+            }
+          },
+          {
+            "key": "border",
+            "type": "BorderStroke",
+            "border": {
+                "width": 1,
+                "color": {
+                    "colorType": "MaterialColor",
+                    "value": "outline"
+                }
+            }
+          },
+          {
+            "key": "textStyle",
+            "type": "TextStyle",
+            "textStyle": "labelLarge"
+          }
+        ]
+      }
+    },
+    {
+      "Secondary": {
+        "baseTheme": "Primary",
+        "properties": [
+          {
+            "key": "contentColor",
+            "type": "Color",
+            "color": {
+              "colorType": "MaterialColor",
+              "value": "secondary"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Tertiary": {
+        "baseTheme": "Primary",
+        "properties": [
+          {
+            "key": "contentColor",
+            "type": "Color",
+            "color": {
+              "colorType": "MaterialColor",
+              "value": "tertiary"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

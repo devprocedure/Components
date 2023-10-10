@@ -6,8 +6,8 @@ import androidx.compose.material3.TextFieldDefaults
 import androidx.compose.runtime.Composable
 import com.composethemer.ProOutlinedTextFieldThemes
 import com.composethemer.ProTextFieldThemes
-import com.devprocedure.ui.base.textfield.prooutlinedtextfield.ProOutlinedTextFieldTheme
-import com.devprocedure.ui.base.textfield.protextfield.ProTextFieldTheme
+import com.devprocedure.ui.base.textfield.outlinedtextfield.ProOutlinedTextFieldTheme
+import com.devprocedure.ui.base.textfield.textfield.ProTextFieldTheme
 
 /**
  * Created by emre bahadir on 10/6/2023

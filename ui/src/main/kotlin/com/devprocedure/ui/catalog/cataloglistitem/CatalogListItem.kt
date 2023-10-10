@@ -15,9 +15,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.composethemer.CatalogListItemThemes
 import com.devprocedure.designsystem.theme.CatalogTheme
-import com.devprocedure.ui.base.card.procard.ProCard
-import com.devprocedure.ui.base.card.proelevatedcard.ProElevatedCard
-import com.devprocedure.ui.base.icon.proicon.ProIcon
+import com.devprocedure.ui.base.card.card.ProCard
+import com.devprocedure.ui.base.card.elevatedcard.ProElevatedCard
+import com.devprocedure.ui.base.icon.icon.ProIcon
 import com.devprocedure.ui.base.text.ProText
 import com.devprocedure.ui.util.ProImageVector
 import com.devprocedure.ui.util.UiThemePreview
