@@ -5,11 +5,9 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.composethemer.ProButtonThemes
 import com.devprocedure.catalog.ui.detail.base.button.ProButtonCatalog
 import com.devprocedure.ui.data.Components
 
@@ -18,7 +16,7 @@ import com.devprocedure.ui.data.Components
  */
 @Composable
 fun DetailScreen(
-    componentName: String,
+    componentName: String
 ) {
     val component = Components.getComponentByName(componentName)
     Scaffold { innerPadding ->
@@ -29,10 +27,6 @@ fun DetailScreen(
                 .padding(innerPadding),
             verticalArrangement = Arrangement.spacedBy(16.dp)
         ) {
-            item {
-
-            }
-
             when (component) {
                 Components.Button -> ProButtonCatalog()
                 Components.OutlinedButton -> TODO()

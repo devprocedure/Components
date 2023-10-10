@@ -40,7 +40,7 @@ class MainActivity : ComponentActivity() {
 
                         composable(
                             route = Screens.Detail.route +
-                                    "?componentName={componentName}",
+                                "?componentName={componentName}",
                             arguments = listOf(
                                 navArgument("componentName") {
                                     type = NavType.StringType
@@ -49,7 +49,7 @@ class MainActivity : ComponentActivity() {
                         ) {
                             val componentName = it.arguments?.getString("componentName")
                             DetailScreen(
-                                componentName = componentName.orEmpty(),
+                                componentName = componentName.orEmpty()
                             )
                         }
                     }

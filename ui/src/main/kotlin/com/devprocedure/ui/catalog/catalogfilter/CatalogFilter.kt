@@ -107,7 +107,7 @@ inline fun <reified THEME> CatalogFilter(
                             imageVector = Icons.Rounded.Check
                         ) else null
                     )
-                },
+                }
             )
         }
 

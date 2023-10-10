@@ -29,7 +29,7 @@ internal fun LazyListScope.ProButtonCatalog() {
                 themeType = it
             }
         )
-        
+
         CatalogItem(
             title = "ProButton"
         ) {
@@ -54,7 +54,7 @@ internal fun LazyListScope.ProButtonCatalog() {
                 text = "ProButton",
                 onClick = {},
                 leadingIcon = ProImageVector(
-                    imageVector = Icons.Rounded.Add,
+                    imageVector = Icons.Rounded.Add
                 ),
                 theme = themeType.theme
             )
@@ -63,7 +63,7 @@ internal fun LazyListScope.ProButtonCatalog() {
                 text = "ProButton",
                 onClick = {},
                 leadingIcon = ProImageVector(
-                    imageVector = Icons.Rounded.Add,
+                    imageVector = Icons.Rounded.Add
                 ),
                 enabled = false,
                 theme = themeType.theme
@@ -77,7 +77,7 @@ internal fun LazyListScope.ProButtonCatalog() {
                 text = "ProButton",
                 onClick = {},
                 trailingIcon = ProImageVector(
-                    imageVector = Icons.Rounded.Add,
+                    imageVector = Icons.Rounded.Add
                 ),
                 theme = themeType.theme
             )
@@ -86,7 +86,7 @@ internal fun LazyListScope.ProButtonCatalog() {
                 text = "ProButton",
                 onClick = {},
                 trailingIcon = ProImageVector(
-                    imageVector = Icons.Rounded.Add,
+                    imageVector = Icons.Rounded.Add
                 ),
                 enabled = false,
                 theme = themeType.theme
@@ -100,10 +100,10 @@ internal fun LazyListScope.ProButtonCatalog() {
                 text = "ProButton",
                 onClick = {},
                 leadingIcon = ProImageVector(
-                    imageVector = Icons.Rounded.Add,
+                    imageVector = Icons.Rounded.Add
                 ),
                 trailingIcon = ProImageVector(
-                    imageVector = Icons.Rounded.Add,
+                    imageVector = Icons.Rounded.Add
                 ),
                 theme = themeType.theme
             )
@@ -112,10 +112,10 @@ internal fun LazyListScope.ProButtonCatalog() {
                 text = "ProButton",
                 onClick = {},
                 leadingIcon = ProImageVector(
-                    imageVector = Icons.Rounded.Add,
+                    imageVector = Icons.Rounded.Add
                 ),
                 trailingIcon = ProImageVector(
-                    imageVector = Icons.Rounded.Add,
+                    imageVector = Icons.Rounded.Add
                 ),
                 enabled = false,
                 theme = themeType.theme
