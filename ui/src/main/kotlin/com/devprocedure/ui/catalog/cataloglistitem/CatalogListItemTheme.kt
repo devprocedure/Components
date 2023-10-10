@@ -12,11 +12,11 @@ import com.proeb.composethemer.core.annotation.ComponentTheme
 @ComponentTheme
 interface CatalogListItemTheme {
     @Composable
-    fun headlineSize(): State<Dp>
+    fun shortNameSize(): State<Dp>
 
     @Composable
-    fun headlineTextStyle(): State<TextStyle>
+    fun shortNameStyle(): State<TextStyle>
 
     @Composable
-    fun titleTextStyle(): State<TextStyle>
+    fun titleStyle(): State<TextStyle>
 }

@@ -7,19 +7,19 @@
       "Default": {
         "properties": [
           {
-            "key": "headlineSize",
+            "key": "shortNameSize",
             "type": "Dp",
             "dp": "48"
           },
           {
-            "key": "headlineTextStyle",
+            "key": "shortNameStyle",
             "type": "TextStyle",
-            "textStyle": "headlineLarge"
+            "textStyle": "headlineMedium"
           },
           {
-            "key": "titleTextStyle",
+            "key": "titleStyle",
             "type": "TextStyle",
-            "textStyle": "titleMedium"
+            "textStyle": "labelLarge"
           }
         ]
       }

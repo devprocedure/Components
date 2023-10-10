@@ -1,0 +1,26 @@
+{
+  "componentName": "CatalogFilter",
+  "componentPackage": "com.devprocedure.ui.catalog.catalogfilter",
+  "themeName": "CatalogFilterTheme",
+  "themes": [
+    {
+      "Default": {
+        "properties": [
+          {
+            "key": "titleStyle",
+            "type": "TextStyle",
+            "textStyle": "titleMedium"
+          },
+          {
+            "key": "textFieldTheme",
+            "type": "Theme",
+            "viewTheme": {
+              "componentName": "ProOutlinedTextField",
+              "themeName": "Primary"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

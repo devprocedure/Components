@@ -1,0 +1,18 @@
+{
+  "componentName": "CatalogItem",
+  "componentPackage": "com.devprocedure.ui.catalog.catalogitem",
+  "themeName": "CatalogItemTheme",
+  "themes": [
+    {
+      "Default": {
+        "properties": [
+          {
+            "key": "titleStyle",
+            "type": "TextStyle",
+            "textStyle": "titleMedium"
+          }
+        ]
+      }
+    }
+  ]
+}

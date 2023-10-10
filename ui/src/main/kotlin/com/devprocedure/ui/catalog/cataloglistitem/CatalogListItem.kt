@@ -28,6 +28,7 @@ import com.devprocedure.ui.util.UiThemePreview
 @Composable
 fun CatalogListItem(
     title: String,
+    shortName: String,
     onClick: () -> Unit,
     theme: CatalogListItemTheme = CatalogListItemThemes.Default.theme
 ) {
@@ -45,11 +46,13 @@ fun CatalogListItem(
         ) {
             Row(
                 verticalAlignment = Alignment.CenterVertically,
-                horizontalArrangement = Arrangement.spacedBy(8.dp)
+                horizontalArrangement = Arrangement.spacedBy(8.dp),
+                modifier = Modifier
+                    .fillMaxWidth(0.9f)
             ) {
                 ProCard(
                     modifier = Modifier
-                        .size(theme.headlineSize().value)
+                        .size(theme.shortNameSize().value)
                 ) {
                     Column(
                         modifier = Modifier
@@ -58,17 +61,16 @@ fun CatalogListItem(
                         horizontalAlignment = Alignment.CenterHorizontally
                     ) {
                         ProText(
-                            text = title.first().toString(),
-                            style = theme.headlineTextStyle().value
+                            text = shortName,
+                            style = theme.shortNameStyle().value
                         )
                     }
                 }
 
                 ProText(
-                    modifier = Modifier
-                        .fillMaxWidth(0.5f),
+                    modifier = Modifier,
                     text = title,
-                    style = theme.titleTextStyle().value
+                    style = theme.titleStyle().value
                 )
             }
 
@@ -89,6 +91,7 @@ fun CatalogListItemPreview() {
     ) {
         CatalogListItem(
             title = "Title",
+            shortName = "T",
             onClick = {}
         )
     }
