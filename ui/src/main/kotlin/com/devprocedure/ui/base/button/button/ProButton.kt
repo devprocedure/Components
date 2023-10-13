@@ -117,17 +117,3 @@ fun ProButtonWithLeadingAndTrailingIconPreview() {
         )
     }
 }
-
-@UiThemePreview
-@Composable
-fun ProButtonDisabledPreview() {
-    CatalogTheme(
-        dynamicColor = false
-    ) {
-        ProButton(
-            onClick = {},
-            text = "Button",
-            enabled = false
-        )
-    }
-}

@@ -5,9 +5,13 @@ import androidx.compose.material3.ButtonDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.unit.dp
 import com.composethemer.ProButtonThemes
+import com.composethemer.ProElevatedButtonThemes
+import com.composethemer.ProFilledTonalButtonThemes
 import com.composethemer.ProOutlinedButtonThemes
 import com.composethemer.ProTextButtonThemes
 import com.devprocedure.ui.base.button.button.ProButtonTheme
+import com.devprocedure.ui.base.button.elevatedbutton.ProElevatedButtonTheme
+import com.devprocedure.ui.base.button.filledtonalbutton.ProFilledTonalButtonTheme
 import com.devprocedure.ui.base.button.outlinedbutton.ProOutlinedButtonTheme
 import com.devprocedure.ui.base.button.textbutton.ProTextButtonTheme
 
@@ -24,6 +28,12 @@ object ProButtonDefaults {
 
     @Composable
     internal fun filledButtonTheme() = ProButtonThemes.Primary.theme
+
+    @Composable
+    internal fun elevatedButtonTheme() = ProElevatedButtonThemes.Primary.theme
+
+    @Composable
+    internal fun filledTonalButtonTheme() = ProFilledTonalButtonThemes.SeondaryContainer.theme
 
     @Composable
     internal fun outlinedButtonTheme() = ProOutlinedButtonThemes.Primary.theme
@@ -55,6 +65,48 @@ object ProButtonDefaults {
         contentColor = theme.contentColor().value,
         disabledContainerColor = theme.disabledContainerColor().value,
         disabledContentColor = theme.disabledContentColor().value
+    )
+
+    @Composable
+    internal fun elevatedButtonColors(
+        theme: ProElevatedButtonTheme
+    ) = ButtonDefaults.elevatedButtonColors(
+        containerColor = theme.containerColor().value,
+        contentColor = theme.contentColor().value,
+        disabledContainerColor = theme.disabledContainerColor().value,
+        disabledContentColor = theme.disabledContentColor().value
+    )
+
+    @Composable
+    internal fun elevatedButtonElevation(
+        theme: ProElevatedButtonTheme
+    ) = ButtonDefaults.elevatedButtonElevation(
+        defaultElevation = theme.defaultElevation().value,
+        pressedElevation = theme.pressedElevation().value,
+        focusedElevation = theme.focusedElevation().value,
+        hoveredElevation = theme.hoveredElevation().value,
+        disabledElevation = theme.disabledElevation().value
+    )
+
+    @Composable
+    internal fun filledTonalButtonColors(
+        theme: ProFilledTonalButtonTheme
+    ) = ButtonDefaults.filledTonalButtonColors(
+        containerColor = theme.containerColor().value,
+        contentColor = theme.contentColor().value,
+        disabledContainerColor = theme.disabledContainerColor().value,
+        disabledContentColor = theme.disabledContentColor().value
+    )
+
+    @Composable
+    internal fun filledTonalButtonElevation(
+        theme: ProFilledTonalButtonTheme
+    ) = ButtonDefaults.filledTonalButtonElevation(
+        defaultElevation = theme.defaultElevation().value,
+        pressedElevation = theme.pressedElevation().value,
+        focusedElevation = theme.focusedElevation().value,
+        hoveredElevation = theme.hoveredElevation().value,
+        disabledElevation = theme.disabledElevation().value
     )
 
     @Composable

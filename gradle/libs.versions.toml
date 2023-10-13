@@ -1,11 +1,11 @@
 [versions]
-compose-themer = "1.0.0-alpha03"
+compose-themer = "1.0.0-alpha04"
 agp = "8.1.1"
 kotlin = "1.9.0"
 jvmTarget = "17"
 ksp = "1.9.0-1.0.12"
 androidxActivity = "1.7.2"
-material3 = "1.2.0-alpha08"
+material3 = "1.2.0-alpha09"
 androidxCompose = "1.4.3"
 androidxComposeCompiler = "1.5.1"
 androidxNavigation = "2.7.4"

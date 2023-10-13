@@ -1,0 +1,47 @@
+{
+  "componentName": "ProFilledIconButton",
+  "componentPackage": "com.devprocedure.ui.base.iconbutton.fillediconbutton",
+  "themeName": "ProFilledIconButtonTheme",
+  "themes": [
+    {
+      "Primary": {
+        "properties": [
+          {
+            "key": "containerColor",
+            "type": "Color",
+            "color": {
+              "colorType": "MaterialColor",
+              "value": "primary"
+            }
+          },
+          {
+            "key": "contentColor",
+            "type": "Color",
+            "color": {
+              "colorType": "MaterialContentColor",
+              "value": "primary"
+            }
+          },
+          {
+            "key": "disabledContainerColor",
+            "type": "Color",
+            "color": {
+              "colorType": "MaterialColor",
+              "value": "onSurface",
+              "alpha": 0.12
+            }
+          },
+          {
+            "key": "disabledContentColor",
+            "type": "Color",
+            "color": {
+              "colorType": "MaterialColor",
+              "value": "onSurface",
+              "alpha": 0.38
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

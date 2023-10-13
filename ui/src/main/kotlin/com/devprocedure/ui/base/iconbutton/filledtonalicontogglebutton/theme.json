@@ -1,0 +1,109 @@
+{
+  "componentName": "ProFilledTonalIconToggleButton",
+  "componentPackage": "com.devprocedure.ui.base.iconbutton.filledtonalicontogglebutton",
+  "themeName": "ProFilledTonalIconToggleButtonTheme",
+  "themes": [
+    {
+      "SecondaryContainer": {
+        "properties": [
+          {
+            "key": "containerColor",
+            "type": "Color",
+            "color": {
+              "colorType": "MaterialColor",
+              "value": "surfaceVariant"
+            }
+          },
+          {
+            "key": "contentColor",
+            "type": "Color",
+            "color": {
+              "colorType": "MaterialContentColor",
+              "value": "surfaceVariant"
+            }
+          },
+          {
+            "key": "disabledContainerColor",
+            "type": "Color",
+            "color": {
+              "colorType": "MaterialColor",
+              "value": "onSurface",
+              "alpha": 0.12
+            }
+          },
+          {
+            "key": "disabledContentColor",
+            "type": "Color",
+            "color": {
+              "colorType": "MaterialColor",
+              "value": "onSurface",
+              "alpha": 0.38
+            }
+          },
+          {
+            "key": "checkedContainerColor",
+            "type": "Color",
+            "color": {
+              "colorType": "MaterialColor",
+              "value": "secondaryContainer"
+            }
+          },
+          {
+            "key": "checkedContentColor",
+            "type": "Color",
+            "color": {
+              "colorType": "MaterialColor",
+              "value": "onSecondaryContainer"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "PrimaryContainer": {
+        "baseTheme": "SecondaryContainer",
+        "properties": [
+          {
+            "key": "checkedContainerColor",
+            "type": "Color",
+            "color": {
+              "colorType": "MaterialColor",
+              "value": "primaryContainer"
+            }
+          },
+          {
+            "key": "checkedContentColor",
+            "type": "Color",
+            "color": {
+              "colorType": "MaterialColor",
+              "value": "onPrimaryContainer"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "TertiaryContainer": {
+        "baseTheme": "SecondaryContainer",
+        "properties": [
+          {
+            "key": "checkedContainerColor",
+            "type": "Color",
+            "color": {
+              "colorType": "MaterialColor",
+              "value": "tertiaryContainer"
+            }
+          },
+          {
+            "key": "checkedContentColor",
+            "type": "Color",
+            "color": {
+              "colorType": "MaterialColor",
+              "value": "onTertiaryContainer"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "componentName": "ProFilledTonalIconButton",
+  "componentPackage": "com.devprocedure.ui.base.iconbutton.filledtonaliconbutton",
+  "themeName": "ProFilledTonalIconButtonTheme",
+  "themes": [
+    {
+      "SecondaryContainer": {
+        "properties": [
+          {
+            "key": "containerColor",
+            "type": "Color",
+            "color": {
+              "colorType": "MaterialColor",
+              "value": "secondaryContainer"
+            }
+          },
+          {
+            "key": "contentColor",
+            "type": "Color",
+            "color": {
+              "colorType": "MaterialContentColor",
+              "value": "secondaryContainer"
+            }
+          },
+          {
+            "key": "disabledContainerColor",
+            "type": "Color",
+            "color": {
+              "colorType": "MaterialColor",
+              "value": "onSurface",
+              "alpha": 0.12
+            }
+          },
+          {
+            "key": "disabledContentColor",
+            "type": "Color",
+            "color": {
+              "colorType": "MaterialColor",
+              "value": "onSurface",
+              "alpha": 0.38
+            }
+          }
+        ]
+      }
+    },
+    {
+      "PrimaryContainer": {
+        "baseTheme": "SecondaryContainer",
+        "properties": [
+          {
+            "key": "containerColor",
+            "type": "Color",
+            "color": {
+              "colorType": "MaterialColor",
+              "value": "primaryContainer"
+            }
+          },
+          {
+            "key": "contentColor",
+            "type": "Color",
+            "color": {
+              "colorType": "MaterialContentColor",
+              "value": "primaryContainer"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "TertiaryContainer": {
+        "baseTheme": "SecondaryContainer",
+        "properties": [
+          {
+            "key": "containerColor",
+            "type": "Color",
+            "color": {
+              "colorType": "MaterialColor",
+              "value": "tertiaryContainer"
+            }
+          },
+          {
+            "key": "contentColor",
+            "type": "Color",
+            "color": {
+              "colorType": "MaterialContentColor",
+              "value": "tertiaryContainer"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

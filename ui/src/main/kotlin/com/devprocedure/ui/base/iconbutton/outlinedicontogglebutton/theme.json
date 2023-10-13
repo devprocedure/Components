@@ -1,0 +1,103 @@
+{
+  "componentName": "ProOutlinedIconToggleButton",
+  "componentPackage": "com.devprocedure.ui.base.iconbutton.outlinedicontogglebutton",
+  "themeName": "ProOutlinedIconToggleButtonTheme",
+  "themes": [
+    {
+      "InverseSurface": {
+        "properties": [
+          {
+            "key": "containerColor",
+            "type": "Color",
+            "color": {
+              "colorType": "HexColor",
+              "value": "0x00000000"
+            }
+          },
+          {
+            "key": "contentColor",
+            "type": "Color",
+            "color": {
+              "colorType": "LocalContentColor",
+              "value": "0"
+            }
+          },
+          {
+            "key": "disabledContainerColor",
+            "type": "Color",
+            "color": {
+              "colorType": "HexColor",
+              "value": "0x00000000"
+            }
+          },
+          {
+            "key": "disabledContentColor",
+            "type": "Color",
+            "color": {
+              "colorType": "LocalContentColor",
+              "value": "0",
+              "alpha": 0.38
+            }
+          },
+          {
+            "key": "checkedContainerColor",
+            "type": "Color",
+            "color": {
+              "colorType": "MaterialColor",
+              "value": "inverseSurface"
+            }
+          },
+          {
+            "key": "checkedContentColor",
+            "type": "Color",
+            "color": {
+              "colorType": "MaterialContentColor",
+              "value": "inverseSurface"
+            }
+          },
+          {
+            "key": "border",
+            "type": "BorderStroke",
+            "border": {
+              "width": 1,
+              "color": {
+                "colorType": "LocalContentColor",
+                "value": "0"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "InverseSurfaceChecked": {
+        "baseTheme": "InverseSurface",
+        "properties": [
+          {
+            "key": "border",
+            "type": "BorderStroke"
+          }
+        ]
+      }
+    },
+    {
+      "InverseSurfaceDisable": {
+        "baseTheme": "InverseSurface",
+        "properties": [
+          {
+            "key": "border",
+            "type": "BorderStroke",
+            "border": {
+              "width": 1,
+              "color": {
+                "colorType": "LocalContentColor",
+                "value": "0",
+                "alpha": 0.12
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

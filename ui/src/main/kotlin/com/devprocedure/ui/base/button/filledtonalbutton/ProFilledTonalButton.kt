@@ -1,11 +1,12 @@
-package com.devprocedure.ui.base.button.outlinedbutton
+package com.devprocedure.ui.base.button.filledtonalbutton
 
-import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
 import androidx.compose.material3.ButtonColors
-import androidx.compose.material3.OutlinedButton
+import androidx.compose.material3.ButtonElevation
+import androidx.compose.material3.FilledTonalButton
+import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import com.devprocedure.designsystem.theme.CatalogTheme
@@ -15,24 +16,24 @@ import com.devprocedure.ui.util.ProImageVector
 import com.devprocedure.ui.util.UiThemePreview
 
 /**
- * Created by emre bahadir on 10/6/2023
+ * Created by emre bahadir on 10/13/2023
  */
 @Composable
-private fun ProOutlinedButton(
+private fun ProFilledTonalButton(
     onClick: () -> Unit,
     modifier: Modifier = Modifier,
     enabled: Boolean = true,
     colors: ButtonColors,
-    border: BorderStroke,
+    elevation: ButtonElevation,
     contentPadding: PaddingValues = ProButtonDefaults.buttonContentPadding(),
     content: @Composable () -> Unit
 ) {
-    OutlinedButton(
+    FilledTonalButton(
         onClick = onClick,
         modifier = modifier,
         enabled = enabled,
         colors = colors,
-        border = border,
+        elevation = elevation,
         contentPadding = contentPadding
     ) {
         content()
@@ -40,21 +41,21 @@ private fun ProOutlinedButton(
 }
 
 @Composable
-fun ProOutlinedButton(
+fun ProFilledTonalButton(
     text: String,
     leadingIcon: ProImageVector? = null,
     trailingIcon: ProImageVector? = null,
     onClick: () -> Unit,
     modifier: Modifier = Modifier,
     enabled: Boolean = true,
-    theme: ProOutlinedButtonTheme = ProButtonDefaults.outlinedButtonTheme()
+    theme: ProFilledTonalButtonTheme = ProButtonDefaults.filledTonalButtonTheme()
 ) {
-    ProOutlinedButton(
+    ProFilledTonalButton(
         onClick = onClick,
         modifier = modifier,
         enabled = enabled,
-        colors = ProButtonDefaults.outlinedButtonColors(theme = theme),
-        border = theme.border().value,
+        colors = ProButtonDefaults.filledTonalButtonColors(theme = theme),
+        elevation = ProButtonDefaults.filledTonalButtonElevation(theme = theme),
         content = {
             ProButtonContent(
                 text = text,
@@ -68,11 +69,11 @@ fun ProOutlinedButton(
 
 @UiThemePreview
 @Composable
-fun ProOutlinedButtonPreview() {
+fun ProFilledTonalButtonPreview() {
     CatalogTheme(
         dynamicColor = false
     ) {
-        ProOutlinedButton(
+        ProFilledTonalButton(
             onClick = {},
             text = "Button"
         )
@@ -81,11 +82,11 @@ fun ProOutlinedButtonPreview() {
 
 @UiThemePreview
 @Composable
-fun ProOutlinedButtonWithLeadingIconPreview() {
+fun ProFilledTonalWithLeadingIconPreview() {
     CatalogTheme(
         dynamicColor = false
     ) {
-        ProOutlinedButton(
+        ProFilledTonalButton(
             onClick = {},
             text = "Button",
             leadingIcon = ProImageVector(Icons.Default.Add)
@@ -95,11 +96,11 @@ fun ProOutlinedButtonWithLeadingIconPreview() {
 
 @UiThemePreview
 @Composable
-fun ProOutlinedButtonWithTrailingIconPreview() {
+fun ProFilledTonalWithTrailingIconPreview() {
     CatalogTheme(
         dynamicColor = false
     ) {
-        ProOutlinedButton(
+        ProFilledTonalButton(
             onClick = {},
             text = "Button",
             trailingIcon = ProImageVector(Icons.Default.Add)
@@ -109,11 +110,11 @@ fun ProOutlinedButtonWithTrailingIconPreview() {
 
 @UiThemePreview
 @Composable
-fun ProOutlinedButtonWithLeadingAndTrailingIconPreview() {
+fun ProFilledTonalWithLeadingAndTrailingIconPreview() {
     CatalogTheme(
         dynamicColor = false
     ) {
-        ProOutlinedButton(
+        ProFilledTonalButton(
             onClick = {},
             text = "Button",
             leadingIcon = ProImageVector(Icons.Default.Add),
