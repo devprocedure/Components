@@ -4,6 +4,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.ColumnScope
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.height
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -20,6 +21,7 @@ import com.devprocedure.ui.util.UiThemePreview
 @Composable
 fun CatalogItem(
     title: String,
+    hasDivider: Boolean = true,
     theme: CatalogItemTheme = CatalogItemThemes.Default.theme,
     content: @Composable ColumnScope.() -> Unit
 ) {
@@ -34,6 +36,14 @@ fun CatalogItem(
         Spacer(modifier = Modifier.height(8.dp))
 
         content()
+
+        if (hasDivider) {
+            Spacer(modifier = Modifier.height(8.dp))
+
+            HorizontalDivider()
+
+            Spacer(modifier = Modifier.height(8.dp))
+        }
     }
 }
 

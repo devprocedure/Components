@@ -10,9 +10,12 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
+import androidx.navigation.compose.rememberNavController
 import com.devprocedure.catalog.util.Screens
+import com.devprocedure.designsystem.theme.CatalogTheme
 import com.devprocedure.ui.catalog.cataloglistitem.CatalogListItem
 import com.devprocedure.ui.data.Components
+import com.devprocedure.ui.util.UiThemePreview
 
 /**
  * Created by emre bahadir on 10/9/2023
@@ -39,5 +42,15 @@ fun CatalogScreen(
                 )
             }
         }
+    }
+}
+
+@UiThemePreview
+@Composable
+fun CatalogScreenPreview() {
+    CatalogTheme(
+        dynamicColor = false
+    ) {
+        CatalogScreen(navController = rememberNavController())
     }
 }

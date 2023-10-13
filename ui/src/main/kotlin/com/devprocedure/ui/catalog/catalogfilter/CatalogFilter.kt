@@ -2,62 +2,61 @@ package com.devprocedure.ui.catalog.catalogfilter
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.PaddingValues
-import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.rounded.Check
 import androidx.compose.material.icons.rounded.ExpandLess
 import androidx.compose.material.icons.rounded.ExpandMore
 import androidx.compose.material3.ExperimentalMaterial3Api
-import androidx.compose.material3.HorizontalDivider
+import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalFocusManager
 import androidx.compose.ui.unit.dp
 import com.composethemer.CatalogFilterThemes
+import com.devprocedure.designsystem.theme.CatalogTheme
 import com.devprocedure.ui.base.dropdownmenu.dropdownmenuitem.DropdownMenuItem
 import com.devprocedure.ui.base.exposeddropdownmenu.exposeddropdownmenu.ProExposedDropdownMenuBox
 import com.devprocedure.ui.base.exposeddropdownmenu.exposeddropdownmenubox.ProExposedDropdownMenu
 import com.devprocedure.ui.base.text.ProText
 import com.devprocedure.ui.base.textfield.outlinedtextfield.ProOutlinedTextField
 import com.devprocedure.ui.util.ProImageVector
+import com.devprocedure.ui.util.UiThemePreview
 
 /**
  * Created by emre bahadir on 10/10/2023
  */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-inline fun <reified THEME> CatalogFilter(
+fun CatalogFilter(
     title: String,
-    selectedTheme: THEME,
-    crossinline onThemeClick: (THEME) -> Unit,
+    selectedTheme: String,
+    items: List<String>,
+    onThemeClick: (String) -> Unit,
     theme: CatalogFilterTheme = CatalogFilterThemes.Default.theme
 ) {
-    var selectedIndex by remember {
-        mutableIntStateOf(THEME::class.sealedSubclasses.indexOfFirst { it.objectInstance == selectedTheme })
-    }
-
     var menuExpanded by remember {
         mutableStateOf(false)
     }
 
     var selectedThemeName by remember {
-        mutableStateOf((THEME::class.sealedSubclasses[selectedIndex].objectInstance as THEME))
+        mutableStateOf(selectedTheme)
     }
 
-    var focusManager = LocalFocusManager.current
+    val focusManager = LocalFocusManager.current
 
     Column(
         modifier = Modifier
-            .padding(PaddingValues(bottom = 16.dp)),
-        verticalArrangement = Arrangement.spacedBy(8.dp)
+            .padding(16.dp)
+            .fillMaxWidth(),
+        verticalArrangement = Arrangement.spacedBy(8.dp),
+        horizontalAlignment = Alignment.CenterHorizontally
     ) {
         ProText(
             text = title,
@@ -73,9 +72,7 @@ inline fun <reified THEME> CatalogFilter(
             ProOutlinedTextField(
                 modifier = Modifier
                     .menuAnchor(),
-                value = selectedThemeName?.let {
-                    it::class.simpleName.orEmpty()
-                } ?: "",
+                value = selectedThemeName,
                 onValueChange = {},
                 readOnly = true,
                 trailingIcon = ProImageVector(
@@ -91,28 +88,38 @@ inline fun <reified THEME> CatalogFilter(
                     focusManager.clearFocus()
                 },
                 onItemClicked = {
-                    selectedIndex = it
-                    selectedThemeName = THEME::class.sealedSubclasses[selectedIndex].objectInstance as THEME
+                    selectedThemeName = items.get(it)
                     menuExpanded = false
                     focusManager.clearFocus()
                     onThemeClick(selectedThemeName)
                 },
-                items = THEME::class.sealedSubclasses.mapIndexed { index, themeClass ->
+                items = items.mapIndexed { index, themeName ->
                     DropdownMenuItem(
                         id = index,
-                        text = themeClass?.objectInstance?.let {
-                            it::class.simpleName.orEmpty()
-                        } ?: "",
-                        trailingIcon = if (index == selectedIndex) ProImageVector(
+                        text = themeName,
+                        trailingIcon = if (themeName == selectedThemeName) ProImageVector(
                             imageVector = Icons.Rounded.Check
                         ) else null
                     )
                 }
             )
         }
+    }
+}
 
-        Spacer(modifier = Modifier.height(8.dp))
-
-        HorizontalDivider()
+@UiThemePreview
+@Composable
+fun CatalogFilterPreview() {
+    CatalogTheme(
+        darkTheme = false
+    ) {
+        Surface {
+            CatalogFilter(
+                title = "Button Themes",
+                selectedTheme = "Default",
+                items = listOf("Default", "Primary", "Secondary"),
+                onThemeClick = {}
+            )
+        }
     }
 }
