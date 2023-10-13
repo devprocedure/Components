@@ -21,7 +21,7 @@ fun ProIconButton(
     icon: ProImageVector,
     modifier: Modifier = Modifier,
     enabled: Boolean = true,
-    theme: ProIconButtonTheme = ProIconButtonDefaults.iconButtonTheme(),
+    theme: ProIconButtonTheme = ProIconButtonDefaults.iconButtonTheme()
 ) {
     IconButton(
         onClick = onClick,

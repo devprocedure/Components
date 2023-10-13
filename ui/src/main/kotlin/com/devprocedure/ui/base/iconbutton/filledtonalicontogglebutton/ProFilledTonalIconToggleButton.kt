@@ -22,7 +22,7 @@ fun ProFilledTonalIconToggleButton(
     icon: ProImageVector,
     modifier: Modifier = Modifier,
     enabled: Boolean = true,
-    theme: ProFilledTonalIconToggleButtonTheme = ProIconButtonDefaults.filledTonalIconToggleButtonTheme(),
+    theme: ProFilledTonalIconToggleButtonTheme = ProIconButtonDefaults.filledTonalIconToggleButtonTheme()
 ) {
     FilledTonalIconToggleButton(
         checked = checked,

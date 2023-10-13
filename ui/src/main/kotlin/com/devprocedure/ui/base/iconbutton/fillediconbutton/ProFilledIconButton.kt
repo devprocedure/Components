@@ -21,7 +21,7 @@ fun ProFilledIconButton(
     icon: ProImageVector,
     modifier: Modifier = Modifier,
     enabled: Boolean = true,
-    theme: ProFilledIconButtonTheme = ProIconButtonDefaults.filledIconButtonTheme(),
+    theme: ProFilledIconButtonTheme = ProIconButtonDefaults.filledIconButtonTheme()
 ) {
     FilledIconButton(
         onClick = onClick,

@@ -2,7 +2,6 @@ package com.devprocedure.ui.base.iconbutton.filledtonaliconbutton
 
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
-import androidx.compose.material3.FilledIconButton
 import androidx.compose.material3.FilledTonalIconButton
 import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
@@ -22,7 +21,7 @@ fun ProFilledTonalIconButton(
     icon: ProImageVector,
     modifier: Modifier = Modifier,
     enabled: Boolean = true,
-    theme: ProFilledTonalIconButtonTheme = ProIconButtonDefaults.filledTonalIconButtonTheme(),
+    theme: ProFilledTonalIconButtonTheme = ProIconButtonDefaults.filledTonalIconButtonTheme()
 ) {
     FilledTonalIconButton(
         onClick = onClick,

@@ -21,7 +21,7 @@ fun ProOutlinedIconButton(
     icon: ProImageVector,
     modifier: Modifier = Modifier,
     enabled: Boolean = true,
-    theme: ProOutlinedIconButtonTheme = ProIconButtonDefaults.outlinedIconButtonTheme(),
+    theme: ProOutlinedIconButtonTheme = ProIconButtonDefaults.outlinedIconButtonTheme()
 ) {
     OutlinedIconButton(
         onClick = onClick,

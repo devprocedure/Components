@@ -23,7 +23,7 @@ fun ProOutlinedIconToggleButton(
     icon: ProImageVector,
     modifier: Modifier = Modifier,
     enabled: Boolean = true,
-    theme: ProOutlinedIconToggleButtonTheme = ProIconButtonDefaults.outlinedIconToggleButtonTheme(),
+    theme: ProOutlinedIconToggleButtonTheme = ProIconButtonDefaults.outlinedIconToggleButtonTheme()
 ) {
     OutlinedIconToggleButton(
         checked = checked,

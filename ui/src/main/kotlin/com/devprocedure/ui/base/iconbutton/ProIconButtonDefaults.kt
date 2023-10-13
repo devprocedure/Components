@@ -10,8 +10,8 @@ import com.composethemer.ProIconToggleButtonThemes
 import com.composethemer.ProOutlinedIconButtonThemes
 import com.composethemer.ProOutlinedIconToggleButtonThemes
 import com.devprocedure.ui.base.iconbutton.fillediconbutton.ProFilledIconButtonTheme
-import com.devprocedure.ui.base.iconbutton.filledtonalicontogglebutton.ProFilledTonalIconToggleButtonTheme
 import com.devprocedure.ui.base.iconbutton.filledtonaliconbutton.ProFilledTonalIconButtonTheme
+import com.devprocedure.ui.base.iconbutton.filledtonalicontogglebutton.ProFilledTonalIconToggleButtonTheme
 import com.devprocedure.ui.base.iconbutton.iconbutton.ProIconButtonTheme
 import com.devprocedure.ui.base.iconbutton.icontogglebutton.ProIconToggleButtonTheme
 import com.devprocedure.ui.base.iconbutton.outlinediconbutton.ProOutlinedIconButtonTheme
@@ -61,7 +61,7 @@ object ProIconButtonDefaults {
         disabledContainerColor = theme.disabledContainerColor().value,
         disabledContentColor = theme.disabledContentColor().value,
         checkedContainerColor = theme.checkedContainerColor().value,
-        checkedContentColor = theme.checkedContentColor().value,
+        checkedContentColor = theme.checkedContentColor().value
     )
 
     @Composable
@@ -93,7 +93,7 @@ object ProIconButtonDefaults {
         disabledContainerColor = theme.disabledContainerColor().value,
         disabledContentColor = theme.disabledContentColor().value,
         checkedContainerColor = theme.checkedContainerColor().value,
-        checkedContentColor = theme.checkedContentColor().value,
+        checkedContentColor = theme.checkedContentColor().value
     )
 
     @Composable
@@ -115,6 +115,6 @@ object ProIconButtonDefaults {
         disabledContainerColor = theme.disabledContainerColor().value,
         disabledContentColor = theme.disabledContentColor().value,
         checkedContainerColor = theme.checkedContainerColor().value,
-        checkedContentColor = theme.checkedContentColor().value,
+        checkedContentColor = theme.checkedContentColor().value
     )
 }

@@ -6,7 +6,6 @@ import androidx.compose.material.icons.filled.Add
 import androidx.compose.material3.ButtonColors
 import androidx.compose.material3.ButtonElevation
 import androidx.compose.material3.FilledTonalButton
-import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import com.devprocedure.designsystem.theme.CatalogTheme
