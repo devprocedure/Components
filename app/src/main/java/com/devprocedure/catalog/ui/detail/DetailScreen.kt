@@ -36,6 +36,8 @@ import com.devprocedure.catalog.ui.detail.base.floatingactionbutton.floatingacti
 import com.devprocedure.catalog.ui.detail.base.floatingactionbutton.largefloatingactionbutton.ProLargeFloatingActionButtonCatalog
 import com.devprocedure.catalog.ui.detail.base.floatingactionbutton.smallfloatingactionbutton.ProSmallFloatingActionButtonCatalog
 import com.devprocedure.catalog.ui.detail.base.icon.icon.ProIconCatalog
+import com.devprocedure.catalog.ui.detail.base.textfield.outlinedtextfield.ProOutlinedTextFieldCatalog
+import com.devprocedure.catalog.ui.detail.base.textfield.textfield.ProTextFieldCatalog
 import com.devprocedure.ui.catalog.catalogfilter.CatalogFilter
 import com.devprocedure.ui.data.Components
 import com.devprocedure.ui.util.getThemeList
@@ -74,7 +76,8 @@ fun DetailScreen(
             LazyColumn(
                 modifier = Modifier
                     .fillMaxSize()
-                    .padding(horizontal = 16.dp),
+                    .padding(horizontal = 16.dp)
+                    .padding(bottom = 16.dp),
                 verticalArrangement = Arrangement.spacedBy(16.dp)
             ) {
                 when (component) {
@@ -89,8 +92,8 @@ fun DetailScreen(
                     Components.SmallFloatingActionButton -> ProSmallFloatingActionButtonCatalog(selectedTheme)
                     Components.ExtendedFloatingActionButton -> ProExtendedFloatingActionButtonCatalog(selectedTheme)
                     Components.Icon -> ProIconCatalog(selectedTheme)
-                    Components.TextField -> TODO()
-                    Components.OutlinedTextField -> TODO()
+                    Components.TextField -> ProTextFieldCatalog(selectedTheme)
+                    Components.OutlinedTextField -> ProOutlinedTextFieldCatalog(selectedTheme)
                 }
             }
         }

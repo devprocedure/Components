@@ -32,7 +32,7 @@ internal fun LazyListScope.ProOutlinedCardCatalog(themeName: String) {
         }
 
         CatalogItem(
-            title = "ProOutlinedCard Clickable",
+            title = "ProOutlinedCard clickable",
             hasDivider = false
         ) {
             ProOutlinedCard(

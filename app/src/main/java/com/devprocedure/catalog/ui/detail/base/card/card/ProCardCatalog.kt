@@ -33,7 +33,7 @@ internal fun LazyListScope.ProCardCatalog(themeName: String) {
         }
 
         CatalogItem(
-            title = "ProCard Clickable",
+            title = "ProCard clickable",
             hasDivider = false
         ) {
             ProCard(
