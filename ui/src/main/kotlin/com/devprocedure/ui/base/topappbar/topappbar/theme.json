@@ -1,0 +1,58 @@
+{
+  "componentName": "ProTopAppBar",
+  "componentPackage": "com.devprocedure.ui.base.topappbar.topappbar",
+  "themeName": "ProTopAppBarTheme",
+  "themes": [
+    {
+      "Surface": {
+        "properties": [
+          {
+            "key": "titleStyle",
+            "type": "TextStyle",
+            "textStyle": "titleLarge"
+          },
+          {
+            "key": "containerColor",
+            "type": "Color",
+            "color": {
+              "colorType": "MaterialColor",
+              "value": "surface"
+            }
+          },
+          {
+            "key": "scrolledContainerColor",
+            "type": "Color",
+            "color": {
+              "colorType": "MaterialColor",
+              "value": "surface"
+            }
+          },
+          {
+            "key": "navigationIconContentColor",
+            "type": "Color",
+            "color": {
+              "colorType": "MaterialColor",
+              "value": "onSurface"
+            }
+          },
+          {
+            "key": "titleContentColor",
+            "type": "Color",
+            "color": {
+              "colorType": "MaterialColor",
+              "value": "onSurface"
+            }
+          },
+          {
+            "key": "actionIconContentColor",
+            "type": "Color",
+            "color": {
+              "colorType": "MaterialColor",
+              "value": "onSurfaceVariant"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
