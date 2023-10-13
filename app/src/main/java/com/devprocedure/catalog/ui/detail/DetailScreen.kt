@@ -35,6 +35,7 @@ import com.devprocedure.catalog.ui.detail.base.floatingactionbutton.extendedfloa
 import com.devprocedure.catalog.ui.detail.base.floatingactionbutton.floatingactionbutton.ProFloatingActionButtonCatalog
 import com.devprocedure.catalog.ui.detail.base.floatingactionbutton.largefloatingactionbutton.ProLargeFloatingActionButtonCatalog
 import com.devprocedure.catalog.ui.detail.base.floatingactionbutton.smallfloatingactionbutton.ProSmallFloatingActionButtonCatalog
+import com.devprocedure.catalog.ui.detail.base.icon.icon.ProIconCatalog
 import com.devprocedure.ui.catalog.catalogfilter.CatalogFilter
 import com.devprocedure.ui.data.Components
 import com.devprocedure.ui.util.getThemeList
@@ -87,7 +88,7 @@ fun DetailScreen(
                     Components.LargeFloatingActionButton -> ProLargeFloatingActionButtonCatalog(selectedTheme)
                     Components.SmallFloatingActionButton -> ProSmallFloatingActionButtonCatalog(selectedTheme)
                     Components.ExtendedFloatingActionButton -> ProExtendedFloatingActionButtonCatalog(selectedTheme)
-                    Components.Icon -> TODO()
+                    Components.Icon -> ProIconCatalog(selectedTheme)
                     Components.TextField -> TODO()
                     Components.OutlinedTextField -> TODO()
                 }
