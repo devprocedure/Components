@@ -1,10 +1,10 @@
-package com.devprocedure.catalog.ui.detail.base.textbutton
+package com.devprocedure.catalog.ui.detail.base.button.button
 
 import androidx.compose.foundation.lazy.LazyListScope
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.rounded.Add
-import com.composethemer.ProTextButtonThemes
-import com.devprocedure.ui.base.button.textbutton.ProTextButton
+import com.composethemer.ProButtonThemes
+import com.devprocedure.ui.base.button.button.ProButton
 import com.devprocedure.ui.catalog.catalogitem.CatalogItem
 import com.devprocedure.ui.util.ProImageVector
 import com.devprocedure.ui.util.getThemeByName
@@ -12,25 +12,25 @@ import com.devprocedure.ui.util.getThemeByName
 /**
  * Created by emre bahadir on 10/10/2023
  */
-internal fun LazyListScope.ProTextButtonCatalog(themeName: String) {
+internal fun LazyListScope.ProButtonCatalog(themeName: String) {
     item {
-        val themeType = ProTextButtonThemes::class.getThemeByName(themeName)
+        val themeType = ProButtonThemes::class.getThemeByName(themeName)
 
         if (themeType == null) {
             error("Theme not found")
         }
 
         CatalogItem(
-            title = "ProTextButton"
+            title = "ProButton"
         ) {
-            ProTextButton(
-                text = "ProTextButton",
+            ProButton(
+                text = "ProButton",
                 onClick = {},
                 theme = themeType.theme
             )
 
-            ProTextButton(
-                text = "ProTextButton",
+            ProButton(
+                text = "ProButton",
                 onClick = {},
                 enabled = false,
                 theme = themeType.theme
@@ -38,10 +38,10 @@ internal fun LazyListScope.ProTextButtonCatalog(themeName: String) {
         }
 
         CatalogItem(
-            title = "ProTextButton with leading icon"
+            title = "ProButton with leading icon"
         ) {
-            ProTextButton(
-                text = "ProTextButton",
+            ProButton(
+                text = "ProButton",
                 onClick = {},
                 leadingIcon = ProImageVector(
                     imageVector = Icons.Rounded.Add
@@ -49,8 +49,8 @@ internal fun LazyListScope.ProTextButtonCatalog(themeName: String) {
                 theme = themeType.theme
             )
 
-            ProTextButton(
-                text = "ProTextButton",
+            ProButton(
+                text = "ProButton",
                 onClick = {},
                 leadingIcon = ProImageVector(
                     imageVector = Icons.Rounded.Add
@@ -61,10 +61,10 @@ internal fun LazyListScope.ProTextButtonCatalog(themeName: String) {
         }
 
         CatalogItem(
-            title = "ProTextButton with trailing icon"
+            title = "ProButton with trailing icon"
         ) {
-            ProTextButton(
-                text = "ProTextButton",
+            ProButton(
+                text = "ProButton",
                 onClick = {},
                 trailingIcon = ProImageVector(
                     imageVector = Icons.Rounded.Add
@@ -72,8 +72,8 @@ internal fun LazyListScope.ProTextButtonCatalog(themeName: String) {
                 theme = themeType.theme
             )
 
-            ProTextButton(
-                text = "ProTextButton",
+            ProButton(
+                text = "ProButton",
                 onClick = {},
                 trailingIcon = ProImageVector(
                     imageVector = Icons.Rounded.Add
@@ -84,11 +84,11 @@ internal fun LazyListScope.ProTextButtonCatalog(themeName: String) {
         }
 
         CatalogItem(
-            title = "ProTextButton with leading and trailing icon",
+            title = "ProButton with leading and trailing icon",
             hasDivider = false
         ) {
-            ProTextButton(
-                text = "ProTextButton",
+            ProButton(
+                text = "ProButton",
                 onClick = {},
                 leadingIcon = ProImageVector(
                     imageVector = Icons.Rounded.Add
@@ -99,8 +99,8 @@ internal fun LazyListScope.ProTextButtonCatalog(themeName: String) {
                 theme = themeType.theme
             )
 
-            ProTextButton(
-                text = "ProTextButton",
+            ProButton(
+                text = "ProButton",
                 onClick = {},
                 leadingIcon = ProImageVector(
                     imageVector = Icons.Rounded.Add

@@ -25,9 +25,9 @@ import com.composethemer.ProOutlinedTextFieldThemes
 import com.composethemer.ProSmallFloatingActionButtonThemes
 import com.composethemer.ProTextButtonThemes
 import com.composethemer.ProTextFieldThemes
-import com.devprocedure.catalog.ui.detail.base.button.ProButtonCatalog
-import com.devprocedure.catalog.ui.detail.base.outlinedbutton.ProOutlinedButtonCatalog
-import com.devprocedure.catalog.ui.detail.base.textbutton.ProTextButtonCatalog
+import com.devprocedure.catalog.ui.detail.base.button.button.ProButtonCatalog
+import com.devprocedure.catalog.ui.detail.base.button.outlinedbutton.ProOutlinedButtonCatalog
+import com.devprocedure.catalog.ui.detail.base.button.textbutton.ProTextButtonCatalog
 import com.devprocedure.ui.catalog.catalogfilter.CatalogFilter
 import com.devprocedure.ui.data.Components
 import com.devprocedure.ui.util.getThemeList
