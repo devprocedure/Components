@@ -33,7 +33,7 @@ object ProButtonDefaults {
     internal fun elevatedButtonTheme() = ProElevatedButtonThemes.Primary.theme
 
     @Composable
-    internal fun filledTonalButtonTheme() = ProFilledTonalButtonThemes.SeondaryContainer.theme
+    internal fun filledTonalButtonTheme() = ProFilledTonalButtonThemes.SecondaryContainer.theme
 
     @Composable
     internal fun outlinedButtonTheme() = ProOutlinedButtonThemes.Primary.theme

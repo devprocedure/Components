@@ -15,17 +15,28 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.composethemer.ProButtonThemes
 import com.composethemer.ProCardThemes
+import com.composethemer.ProElevatedButtonThemes
 import com.composethemer.ProElevatedCardThemes
 import com.composethemer.ProExtendedFloatingActionButtonThemes
+import com.composethemer.ProFilledIconButtonThemes
+import com.composethemer.ProFilledTonalButtonThemes
+import com.composethemer.ProFilledTonalIconButtonThemes
+import com.composethemer.ProFilledTonalIconToggleButtonThemes
 import com.composethemer.ProFloatingActionButtonThemes
+import com.composethemer.ProIconButtonThemes
 import com.composethemer.ProIconThemes
+import com.composethemer.ProIconToggleButtonThemes
 import com.composethemer.ProLargeFloatingActionButtonThemes
 import com.composethemer.ProOutlinedCardThemes
+import com.composethemer.ProOutlinedIconButtonThemes
+import com.composethemer.ProOutlinedIconToggleButtonThemes
 import com.composethemer.ProOutlinedTextFieldThemes
 import com.composethemer.ProSmallFloatingActionButtonThemes
 import com.composethemer.ProTextButtonThemes
 import com.composethemer.ProTextFieldThemes
 import com.devprocedure.catalog.ui.detail.base.button.button.ProButtonCatalog
+import com.devprocedure.catalog.ui.detail.base.button.elevatedbutton.ProElevatedButtonCatalog
+import com.devprocedure.catalog.ui.detail.base.button.filledtonalbutton.ProFilledTonalButtonCatalog
 import com.devprocedure.catalog.ui.detail.base.button.outlinedbutton.ProOutlinedButtonCatalog
 import com.devprocedure.catalog.ui.detail.base.button.textbutton.ProTextButtonCatalog
 import com.devprocedure.catalog.ui.detail.base.card.card.ProCardCatalog
@@ -82,6 +93,8 @@ fun DetailScreen(
             ) {
                 when (component) {
                     Components.Button -> ProButtonCatalog(selectedTheme)
+                    Components.ElevatedButton -> ProElevatedButtonCatalog(selectedTheme)
+                    Components.FilledTonalButton -> ProFilledTonalButtonCatalog(selectedTheme)
                     Components.OutlinedButton -> ProOutlinedButtonCatalog(selectedTheme)
                     Components.TextButton -> ProTextButtonCatalog(selectedTheme)
                     Components.Card -> ProCardCatalog(selectedTheme)
@@ -92,6 +105,13 @@ fun DetailScreen(
                     Components.SmallFloatingActionButton -> ProSmallFloatingActionButtonCatalog(selectedTheme)
                     Components.ExtendedFloatingActionButton -> ProExtendedFloatingActionButtonCatalog(selectedTheme)
                     Components.Icon -> ProIconCatalog(selectedTheme)
+                    Components.IconButton -> TODO()
+                    Components.IconToggleButton -> TODO()
+                    Components.FilledIconButton -> TODO()
+                    Components.FilledTonalIconButton -> TODO()
+                    Components.FilledTonalIconToggleButton -> TODO()
+                    Components.OutlinedIconButton -> TODO()
+                    Components.OutlinedIconToggleButton -> TODO()
                     Components.TextField -> ProTextFieldCatalog(selectedTheme)
                     Components.OutlinedTextField -> ProOutlinedTextFieldCatalog(selectedTheme)
                 }
@@ -102,6 +122,8 @@ fun DetailScreen(
 
 private fun getThemeList(component: Components) = when (component) {
     Components.Button -> ProButtonThemes::class.getThemeList()
+    Components.ElevatedButton -> ProElevatedButtonThemes::class.getThemeList()
+    Components.FilledTonalButton -> ProFilledTonalButtonThemes::class.getThemeList()
     Components.OutlinedButton -> ProTextButtonThemes::class.getThemeList()
     Components.TextButton -> ProTextButtonThemes::class.getThemeList()
     Components.Card -> ProCardThemes::class.getThemeList()
@@ -112,6 +134,13 @@ private fun getThemeList(component: Components) = when (component) {
     Components.SmallFloatingActionButton -> ProSmallFloatingActionButtonThemes::class.getThemeList()
     Components.ExtendedFloatingActionButton -> ProExtendedFloatingActionButtonThemes::class.getThemeList()
     Components.Icon -> ProIconThemes::class.getThemeList()
+    Components.IconButton -> ProIconButtonThemes::class.getThemeList()
+    Components.IconToggleButton -> ProIconToggleButtonThemes::class.getThemeList()
+    Components.FilledIconButton -> ProFilledIconButtonThemes::class.getThemeList()
+    Components.FilledTonalIconButton -> ProFilledTonalIconButtonThemes::class.getThemeList()
+    Components.FilledTonalIconToggleButton -> ProFilledTonalIconToggleButtonThemes::class.getThemeList()
+    Components.OutlinedIconButton -> ProOutlinedIconButtonThemes::class.getThemeList()
+    Components.OutlinedIconToggleButton -> ProOutlinedIconToggleButtonThemes::class.getThemeList()
     Components.TextField -> ProTextFieldThemes::class.getThemeList()
     Components.OutlinedTextField -> ProOutlinedTextFieldThemes::class.getThemeList()
 }

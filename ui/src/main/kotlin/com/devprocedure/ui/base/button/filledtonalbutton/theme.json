@@ -4,7 +4,7 @@
   "themeName": "ProFilledTonalButtonTheme",
   "themes": [
     {
-      "SeondaryContainer": {
+      "SecondaryContainer": {
         "properties": [
           {
             "key": "containerColor",
@@ -75,7 +75,7 @@
     },
     {
       "PrimaryContainer": {
-        "baseTheme": "SeondaryContainer",
+        "baseTheme": "SecondaryContainer",
         "properties": [
           {
             "key": "containerColor",
@@ -98,7 +98,7 @@
     },
     {
       "TertiaryContainer": {
-        "baseTheme": "SeondaryContainer",
+        "baseTheme": "SecondaryContainer",
         "properties": [
           {
             "key": "containerColor",
