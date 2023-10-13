@@ -31,6 +31,10 @@ import com.devprocedure.catalog.ui.detail.base.button.textbutton.ProTextButtonCa
 import com.devprocedure.catalog.ui.detail.base.card.card.ProCardCatalog
 import com.devprocedure.catalog.ui.detail.base.card.elevatedcard.ProElevatedCardCatalog
 import com.devprocedure.catalog.ui.detail.base.card.outlinedcard.ProOutlinedCardCatalog
+import com.devprocedure.catalog.ui.detail.base.floatingactionbutton.extendedfloatingactionbutton.ProExtendedFloatingActionButtonCatalog
+import com.devprocedure.catalog.ui.detail.base.floatingactionbutton.floatingactionbutton.ProFloatingActionButtonCatalog
+import com.devprocedure.catalog.ui.detail.base.floatingactionbutton.largefloatingactionbutton.ProLargeFloatingActionButtonCatalog
+import com.devprocedure.catalog.ui.detail.base.floatingactionbutton.smallfloatingactionbutton.ProSmallFloatingActionButtonCatalog
 import com.devprocedure.ui.catalog.catalogfilter.CatalogFilter
 import com.devprocedure.ui.data.Components
 import com.devprocedure.ui.util.getThemeList
@@ -79,10 +83,10 @@ fun DetailScreen(
                     Components.Card -> ProCardCatalog(selectedTheme)
                     Components.ElevatedCard -> ProElevatedCardCatalog(selectedTheme)
                     Components.OutlinedCard -> ProOutlinedCardCatalog(selectedTheme)
-                    Components.FloatingActionButton -> TODO()
-                    Components.LargeFloatingActionButton -> TODO()
-                    Components.SmallFloatingActionButton -> TODO()
-                    Components.ExtendedFloatingActionButton -> TODO()
+                    Components.FloatingActionButton -> ProFloatingActionButtonCatalog(selectedTheme)
+                    Components.LargeFloatingActionButton -> ProLargeFloatingActionButtonCatalog(selectedTheme)
+                    Components.SmallFloatingActionButton -> ProSmallFloatingActionButtonCatalog(selectedTheme)
+                    Components.ExtendedFloatingActionButton -> ProExtendedFloatingActionButtonCatalog(selectedTheme)
                     Components.Icon -> TODO()
                     Components.TextField -> TODO()
                     Components.OutlinedTextField -> TODO()
