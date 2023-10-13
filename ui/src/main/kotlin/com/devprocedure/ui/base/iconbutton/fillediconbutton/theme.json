@@ -42,6 +42,52 @@
           }
         ]
       }
+    },
+    {
+      "Secondary": {
+        "baseTheme": "Primary",
+        "properties": [
+          {
+            "key": "containerColor",
+            "type": "Color",
+            "color": {
+              "colorType": "MaterialColor",
+              "value": "secondary"
+            }
+          },
+          {
+            "key": "contentColor",
+            "type": "Color",
+            "color": {
+              "colorType": "MaterialContentColor",
+              "value": "secondary"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Tertiary": {
+        "baseTheme": "Primary",
+        "properties": [
+          {
+            "key": "containerColor",
+            "type": "Color",
+            "color": {
+              "colorType": "MaterialColor",
+              "value": "tertiary"
+            }
+          },
+          {
+            "key": "contentColor",
+            "type": "Color",
+            "color": {
+              "colorType": "MaterialContentColor",
+              "value": "tertiary"
+            }
+          }
+        ]
+      }
     }
   ]
 }

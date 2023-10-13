@@ -47,6 +47,13 @@ import com.devprocedure.catalog.ui.detail.base.floatingactionbutton.floatingacti
 import com.devprocedure.catalog.ui.detail.base.floatingactionbutton.largefloatingactionbutton.ProLargeFloatingActionButtonCatalog
 import com.devprocedure.catalog.ui.detail.base.floatingactionbutton.smallfloatingactionbutton.ProSmallFloatingActionButtonCatalog
 import com.devprocedure.catalog.ui.detail.base.icon.icon.ProIconCatalog
+import com.devprocedure.catalog.ui.detail.base.iconbutton.fillediconbutton.ProFilledIconButtonCatalog
+import com.devprocedure.catalog.ui.detail.base.iconbutton.filledtonaliconbutton.ProFilledTonalIconButtonCatalog
+import com.devprocedure.catalog.ui.detail.base.iconbutton.filledtonalicontogglebutton.ProFilledTonalIconToggleButtonCatalog
+import com.devprocedure.catalog.ui.detail.base.iconbutton.iconbutton.ProIconButtonCatalog
+import com.devprocedure.catalog.ui.detail.base.iconbutton.icontogglebutton.ProIconToggleButtonCatalog
+import com.devprocedure.catalog.ui.detail.base.iconbutton.outlinediconbutton.ProOutlinedIconButtonCatalog
+import com.devprocedure.catalog.ui.detail.base.iconbutton.outlinedicontogglebutton.ProOutlinedIconToggleButtonCatalog
 import com.devprocedure.catalog.ui.detail.base.textfield.outlinedtextfield.ProOutlinedTextFieldCatalog
 import com.devprocedure.catalog.ui.detail.base.textfield.textfield.ProTextFieldCatalog
 import com.devprocedure.ui.catalog.catalogfilter.CatalogFilter
@@ -105,13 +112,13 @@ fun DetailScreen(
                     Components.SmallFloatingActionButton -> ProSmallFloatingActionButtonCatalog(selectedTheme)
                     Components.ExtendedFloatingActionButton -> ProExtendedFloatingActionButtonCatalog(selectedTheme)
                     Components.Icon -> ProIconCatalog(selectedTheme)
-                    Components.IconButton -> TODO()
-                    Components.IconToggleButton -> TODO()
-                    Components.FilledIconButton -> TODO()
-                    Components.FilledTonalIconButton -> TODO()
-                    Components.FilledTonalIconToggleButton -> TODO()
-                    Components.OutlinedIconButton -> TODO()
-                    Components.OutlinedIconToggleButton -> TODO()
+                    Components.IconButton -> ProIconButtonCatalog(selectedTheme)
+                    Components.IconToggleButton -> ProIconToggleButtonCatalog(selectedTheme)
+                    Components.FilledIconButton -> ProFilledIconButtonCatalog(selectedTheme)
+                    Components.FilledTonalIconButton -> ProFilledTonalIconButtonCatalog(selectedTheme)
+                    Components.FilledTonalIconToggleButton -> ProFilledTonalIconToggleButtonCatalog(selectedTheme)
+                    Components.OutlinedIconButton -> ProOutlinedIconButtonCatalog(selectedTheme)
+                    Components.OutlinedIconToggleButton -> ProOutlinedIconToggleButtonCatalog(selectedTheme)
                     Components.TextField -> ProTextFieldCatalog(selectedTheme)
                     Components.OutlinedTextField -> ProOutlinedTextFieldCatalog(selectedTheme)
                 }
