@@ -12,6 +12,14 @@ fun <Theme: Any>KClass<Theme>.getThemeList() = this.sealedSubclasses
         }
     }.mapNotNull { it }
 
-fun <Theme: Any>KClass<Theme>.getThemeByName(themeName: String) = this.sealedSubclasses.find {
-    it.objectInstance?.let { it::class.simpleName } == themeName
-}?.objectInstance
+fun <Theme: Any>KClass<Theme>.getThemeByName(themeName: String): Theme {
+    val theme = this.sealedSubclasses.find {
+        it.objectInstance?.let { it::class.simpleName } == themeName
+    }?.objectInstance
+
+    if (theme == null) {
+        error("Theme not found")
+    }
+
+    return theme
+}

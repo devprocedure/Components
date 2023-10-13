@@ -16,10 +16,6 @@ internal fun LazyListScope.ProOutlinedButtonCatalog(themeName: String) {
     item {
         val themeType = ProOutlinedButtonThemes::class.getThemeByName(themeName)
 
-        if (themeType == null) {
-            error("Theme not found")
-        }
-
         CatalogItem(
             title = "ProOutlinedButton"
         ) {

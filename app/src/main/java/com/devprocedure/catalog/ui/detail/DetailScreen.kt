@@ -28,6 +28,9 @@ import com.composethemer.ProTextFieldThemes
 import com.devprocedure.catalog.ui.detail.base.button.button.ProButtonCatalog
 import com.devprocedure.catalog.ui.detail.base.button.outlinedbutton.ProOutlinedButtonCatalog
 import com.devprocedure.catalog.ui.detail.base.button.textbutton.ProTextButtonCatalog
+import com.devprocedure.catalog.ui.detail.base.card.card.ProCardCatalog
+import com.devprocedure.catalog.ui.detail.base.card.elevatedcard.ProElevatedCardCatalog
+import com.devprocedure.catalog.ui.detail.base.card.outlinedcard.ProOutlinedCardCatalog
 import com.devprocedure.ui.catalog.catalogfilter.CatalogFilter
 import com.devprocedure.ui.data.Components
 import com.devprocedure.ui.util.getThemeList
@@ -73,9 +76,9 @@ fun DetailScreen(
                     Components.Button -> ProButtonCatalog(selectedTheme)
                     Components.OutlinedButton -> ProOutlinedButtonCatalog(selectedTheme)
                     Components.TextButton -> ProTextButtonCatalog(selectedTheme)
-                    Components.Card -> TODO()
-                    Components.ElevatedCard -> TODO()
-                    Components.OutlinedCard -> TODO()
+                    Components.Card -> ProCardCatalog(selectedTheme)
+                    Components.ElevatedCard -> ProElevatedCardCatalog(selectedTheme)
+                    Components.OutlinedCard -> ProOutlinedCardCatalog(selectedTheme)
                     Components.FloatingActionButton -> TODO()
                     Components.LargeFloatingActionButton -> TODO()
                     Components.SmallFloatingActionButton -> TODO()

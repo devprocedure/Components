@@ -16,10 +16,6 @@ internal fun LazyListScope.ProTextButtonCatalog(themeName: String) {
     item {
         val themeType = ProTextButtonThemes::class.getThemeByName(themeName)
 
-        if (themeType == null) {
-            error("Theme not found")
-        }
-
         CatalogItem(
             title = "ProTextButton"
         ) {

@@ -1,5 +1,6 @@
 package com.devprocedure.ui.catalog.catalogitem
 
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.ColumnScope
 import androidx.compose.foundation.layout.Spacer
@@ -26,20 +27,17 @@ fun CatalogItem(
     content: @Composable ColumnScope.() -> Unit
 ) {
     Column(
-        horizontalAlignment = Alignment.Start
+        horizontalAlignment = Alignment.Start,
+        verticalArrangement = Arrangement.spacedBy(8.dp)
     ) {
         ProText(
             text = title,
             style = theme.titleStyle().value
         )
 
-        Spacer(modifier = Modifier.height(8.dp))
-
         content()
 
         if (hasDivider) {
-            Spacer(modifier = Modifier.height(8.dp))
-
             HorizontalDivider()
 
             Spacer(modifier = Modifier.height(8.dp))
