@@ -23,8 +23,13 @@
             "key": "scrolledContainerColor",
             "type": "Color",
             "color": {
-              "colorType": "MaterialColor",
-              "value": "surface"
+              "colorType": "MaterialApplyTonalElevation",
+              "value": "0",
+              "tonalElevationColor": {
+                "tonalElevationType": "MaterialColor",
+                "backgroundColor": "surface",
+                "elevation": 2
+              }
             }
           },
           {
