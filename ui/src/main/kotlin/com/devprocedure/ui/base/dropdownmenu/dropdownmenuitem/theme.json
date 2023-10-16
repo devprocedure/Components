@@ -63,8 +63,8 @@
             "padding": {
               "top": 0,
               "bottom": 0,
-              "left": 12,
-              "right": 12
+              "start": 12,
+              "end": 12
             }
           }
         ]

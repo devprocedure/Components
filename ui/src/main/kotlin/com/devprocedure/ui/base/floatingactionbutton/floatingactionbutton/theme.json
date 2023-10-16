@@ -90,6 +90,33 @@
           }
         ]
       }
+    },
+    {
+      "SecondaryContainerBottomAppBar": {
+        "baseTheme": "SecondaryContainer",
+        "properties": [
+          {
+            "key": "defaultElevation",
+            "type": "Dp",
+            "dp": 0
+          },
+          {
+            "key": "pressedElevation",
+            "type": "Dp",
+            "dp": 0
+          },
+          {
+            "key": "focusedElevation",
+            "type": "Dp",
+            "dp": 0
+          },
+          {
+            "key": "hoveredElevation",
+            "type": "Dp",
+            "dp": 0
+          }
+        ]
+      }
     }
   ]
 }

@@ -29,7 +29,8 @@ enum class Components(val componentName: String, val componentGroup: ComponentGr
     TopAppBar("Top App Bar", ComponentGroup.TopAppBar, "Surface"),
     CenterTopAppBar("Center Top App Bar", ComponentGroup.TopAppBar, "Surface"),
     MediumTopAppBar("Medium Top App Bar", ComponentGroup.TopAppBar, "Surface"),
-    LargeTopAppBar("Large Top App Bar", ComponentGroup.TopAppBar, "Surface");
+    LargeTopAppBar("Large Top App Bar", ComponentGroup.TopAppBar, "Surface"),
+    BottomAppBar("Bottom App Bar", ComponentGroup.BottomAppBar, "Surface");
 
     companion object {
         fun getComponentByName(name: String) = values().find { it.componentName == name }

@@ -10,5 +10,6 @@ enum class ComponentGroup(val groupName: String, val shortName: String) {
     Icon("Icon", "I"),
     IconButton("Icon Button", "IB"),
     TextField("Text Field", "TF"),
-    TopAppBar("Top App Bar", "TB")
+    TopAppBar("Top App Bar", "TB"),
+    BottomAppBar("Bottom App Bar", "BB"),
 }

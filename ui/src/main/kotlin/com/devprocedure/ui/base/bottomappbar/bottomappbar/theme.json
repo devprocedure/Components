@@ -1,0 +1,52 @@
+{
+  "componentName": "ProBottomAppBar",
+  "componentPackage": "com.devprocedure.ui.base.bottomappbar.bottomappbar",
+  "themeName": "ProBottomAppBarTheme",
+  "themes": [
+    {
+      "Surface": {
+        "properties": [
+          {
+            "key": "containerColor",
+            "type": "Color",
+            "color": {
+              "colorType": "MaterialColor",
+              "value": "surface"
+            }
+          },
+          {
+            "key": "contentColor",
+            "type": "Color",
+            "color": {
+              "colorType": "MaterialContentColor",
+              "value": "surface"
+            }
+          },
+          {
+            "key": "tonalElevation",
+            "type": "Dp",
+            "dp": 3
+          },
+          {
+            "key": "contentPadding",
+            "type": "PaddingValues",
+            "padding": {
+              "top": 4,
+              "bottom": 0,
+              "start": 4,
+              "end": 4
+            }
+          },
+          {
+            "key": "floatingActionButtonTheme",
+            "type": "Theme",
+            "viewTheme": {
+              "componentName": "ProFloatingActionButton",
+              "themeName": "SecondaryContainerBottomAppBar"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

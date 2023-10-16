@@ -14,6 +14,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import com.composethemer.ProBottomAppBarThemes
 import com.composethemer.ProButtonThemes
 import com.composethemer.ProCardThemes
 import com.composethemer.ProCenterTopAppBarThemes
@@ -39,6 +40,7 @@ import com.composethemer.ProSmallFloatingActionButtonThemes
 import com.composethemer.ProTextButtonThemes
 import com.composethemer.ProTextFieldThemes
 import com.composethemer.ProTopAppBarThemes
+import com.devprocedure.catalog.ui.detail.base.bottomappbar.ProBottomAppBarCatalog
 import com.devprocedure.catalog.ui.detail.base.button.button.ProButtonCatalog
 import com.devprocedure.catalog.ui.detail.base.button.elevatedbutton.ProElevatedButtonCatalog
 import com.devprocedure.catalog.ui.detail.base.button.filledtonalbutton.ProFilledTonalButtonCatalog
@@ -135,6 +137,7 @@ fun DetailScreen(
                     Components.CenterTopAppBar -> ProCenterTopAppBarCatalog(selectedTheme)
                     Components.MediumTopAppBar -> ProMediumTopAppBarCatalog(selectedTheme)
                     Components.LargeTopAppBar -> ProLargeTopAppBarCatalog(selectedTheme)
+                    Components.BottomAppBar -> ProBottomAppBarCatalog(selectedTheme)
                 }
             }
         }
@@ -168,4 +171,5 @@ private fun getThemeList(component: Components) = when (component) {
     Components.CenterTopAppBar -> ProCenterTopAppBarThemes::class.getThemeList()
     Components.MediumTopAppBar -> ProMediumTopAppBarThemes::class.getThemeList()
     Components.LargeTopAppBar -> ProLargeTopAppBarThemes::class.getThemeList()
+    Components.BottomAppBar -> ProBottomAppBarThemes::class.getThemeList()
 }
