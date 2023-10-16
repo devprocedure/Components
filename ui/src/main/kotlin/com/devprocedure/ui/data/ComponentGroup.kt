@@ -9,5 +9,6 @@ enum class ComponentGroup(val groupName: String, val shortName: String) {
     FloatingActionButton("Floating Action Button", "FB"),
     Icon("Icon", "I"),
     IconButton("Icon Button", "IB"),
-    TextField("Text Field", "TF")
+    TextField("Text Field", "TF"),
+    TopAppBar("Top App Bar", "TB")
 }

@@ -1,0 +1,63 @@
+{
+  "componentName": "ProCenterTopAppBar",
+  "componentPackage": "com.devprocedure.ui.base.topappbar.centertopappbar",
+  "themeName": "ProCenterTopAppBarTheme",
+  "themes": [
+    {
+      "Surface": {
+        "properties": [
+          {
+            "key": "titleStyle",
+            "type": "TextStyle",
+            "textStyle": "titleLarge"
+          },
+          {
+            "key": "containerColor",
+            "type": "Color",
+            "color": {
+              "colorType": "MaterialColor",
+              "value": "surface"
+            }
+          },
+          {
+            "key": "scrolledContainerColor",
+            "type": "Color",
+            "color": {
+              "colorType": "MaterialApplyTonalElevation",
+              "value": "0",
+              "tonalElevationColor": {
+                "tonalElevationType": "MaterialColor",
+                "backgroundColor": "surface",
+                "elevation": 2
+              }
+            }
+          },
+          {
+            "key": "navigationIconContentColor",
+            "type": "Color",
+            "color": {
+              "colorType": "MaterialColor",
+              "value": "onSurface"
+            }
+          },
+          {
+            "key": "titleContentColor",
+            "type": "Color",
+            "color": {
+              "colorType": "MaterialColor",
+              "value": "onSurface"
+            }
+          },
+          {
+            "key": "actionIconContentColor",
+            "type": "Color",
+            "color": {
+              "colorType": "MaterialColor",
+              "value": "onSurfaceVariant"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

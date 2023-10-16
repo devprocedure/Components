@@ -5,6 +5,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -15,6 +16,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.composethemer.ProButtonThemes
 import com.composethemer.ProCardThemes
+import com.composethemer.ProCenterTopAppBarThemes
 import com.composethemer.ProElevatedButtonThemes
 import com.composethemer.ProElevatedCardThemes
 import com.composethemer.ProExtendedFloatingActionButtonThemes
@@ -27,6 +29,8 @@ import com.composethemer.ProIconButtonThemes
 import com.composethemer.ProIconThemes
 import com.composethemer.ProIconToggleButtonThemes
 import com.composethemer.ProLargeFloatingActionButtonThemes
+import com.composethemer.ProLargeTopAppBarThemes
+import com.composethemer.ProMediumTopAppBarThemes
 import com.composethemer.ProOutlinedCardThemes
 import com.composethemer.ProOutlinedIconButtonThemes
 import com.composethemer.ProOutlinedIconToggleButtonThemes
@@ -34,6 +38,7 @@ import com.composethemer.ProOutlinedTextFieldThemes
 import com.composethemer.ProSmallFloatingActionButtonThemes
 import com.composethemer.ProTextButtonThemes
 import com.composethemer.ProTextFieldThemes
+import com.composethemer.ProTopAppBarThemes
 import com.devprocedure.catalog.ui.detail.base.button.button.ProButtonCatalog
 import com.devprocedure.catalog.ui.detail.base.button.elevatedbutton.ProElevatedButtonCatalog
 import com.devprocedure.catalog.ui.detail.base.button.filledtonalbutton.ProFilledTonalButtonCatalog
@@ -56,6 +61,10 @@ import com.devprocedure.catalog.ui.detail.base.iconbutton.outlinediconbutton.Pro
 import com.devprocedure.catalog.ui.detail.base.iconbutton.outlinedicontogglebutton.ProOutlinedIconToggleButtonCatalog
 import com.devprocedure.catalog.ui.detail.base.textfield.outlinedtextfield.ProOutlinedTextFieldCatalog
 import com.devprocedure.catalog.ui.detail.base.textfield.textfield.ProTextFieldCatalog
+import com.devprocedure.catalog.ui.detail.base.topappbar.centertopappbar.ProCenterTopAppBarCatalog
+import com.devprocedure.catalog.ui.detail.base.topappbar.largetopappbar.ProLargeTopAppBarCatalog
+import com.devprocedure.catalog.ui.detail.base.topappbar.mediumtopappbar.ProMediumTopAppBarCatalog
+import com.devprocedure.catalog.ui.detail.base.topappbar.topappbar.ProTopAppBarCatalog
 import com.devprocedure.ui.catalog.catalogfilter.CatalogFilter
 import com.devprocedure.ui.data.Components
 import com.devprocedure.ui.util.getThemeList
@@ -63,6 +72,7 @@ import com.devprocedure.ui.util.getThemeList
 /**
  * Created by emre bahadir on 10/9/2023
  */
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun DetailScreen(
     componentName: String
@@ -121,6 +131,10 @@ fun DetailScreen(
                     Components.OutlinedIconToggleButton -> ProOutlinedIconToggleButtonCatalog(selectedTheme)
                     Components.TextField -> ProTextFieldCatalog(selectedTheme)
                     Components.OutlinedTextField -> ProOutlinedTextFieldCatalog(selectedTheme)
+                    Components.TopAppBar -> ProTopAppBarCatalog(selectedTheme)
+                    Components.CenterTopAppBar -> ProCenterTopAppBarCatalog(selectedTheme)
+                    Components.MediumTopAppBar -> ProMediumTopAppBarCatalog(selectedTheme)
+                    Components.LargeTopAppBar -> ProLargeTopAppBarCatalog(selectedTheme)
                 }
             }
         }
@@ -150,4 +164,8 @@ private fun getThemeList(component: Components) = when (component) {
     Components.OutlinedIconToggleButton -> ProOutlinedIconToggleButtonThemes::class.getThemeList()
     Components.TextField -> ProTextFieldThemes::class.getThemeList()
     Components.OutlinedTextField -> ProOutlinedTextFieldThemes::class.getThemeList()
+    Components.TopAppBar -> ProTopAppBarThemes::class.getThemeList()
+    Components.CenterTopAppBar -> ProCenterTopAppBarThemes::class.getThemeList()
+    Components.MediumTopAppBar -> ProMediumTopAppBarThemes::class.getThemeList()
+    Components.LargeTopAppBar -> ProLargeTopAppBarThemes::class.getThemeList()
 }

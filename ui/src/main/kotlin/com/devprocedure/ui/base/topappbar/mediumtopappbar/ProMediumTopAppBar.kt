@@ -1,11 +1,11 @@
 @file:OptIn(ExperimentalMaterial3Api::class)
 
-package com.devprocedure.ui.base.topappbar.topappbar
+package com.devprocedure.ui.base.topappbar.mediumtopappbar
 
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
 import androidx.compose.material3.ExperimentalMaterial3Api
-import androidx.compose.material3.TopAppBar
+import androidx.compose.material3.MediumTopAppBar
 import androidx.compose.material3.TopAppBarScrollBehavior
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -17,10 +17,10 @@ import com.devprocedure.ui.util.ProImageVector
 import com.devprocedure.ui.util.UiThemePreview
 
 /**
- * Created by emre bahadir on 10/13/2023
+ * Created by emre bahadir on 10/16/2023
  */
 @Composable
-fun ProTopAppBar(
+fun ProMediumTopAppBar(
     title: String,
     onNavigationClick: () -> Unit = {},
     onActionClick: (String) -> Unit = {},
@@ -28,9 +28,9 @@ fun ProTopAppBar(
     navigationIcon: ProImageVector? = null,
     actions: Map<String, ProImageVector>? = null,
     scrollBehavior: TopAppBarScrollBehavior? = null,
-    theme: ProTopAppBarTheme = ProTopAppBarDefaults.topAppBarTheme()
+    theme: ProMediumTopAppBarTheme = ProTopAppBarDefaults.mediumTopAppBarTheme()
 ) {
-    TopAppBar(
+    MediumTopAppBar(
         title = {
             ProText(
                 text = title,
@@ -59,17 +59,17 @@ fun ProTopAppBar(
         },
         modifier = modifier,
         scrollBehavior = scrollBehavior,
-        colors = ProTopAppBarDefaults.topAppBarColors(theme = theme)
+        colors = ProTopAppBarDefaults.mediumTopAppBarColors(theme = theme)
     )
 }
 
 @UiThemePreview
 @Composable
-fun ProTopAppBarPreview() {
+fun ProMediumTopAppBarPreview() {
     CatalogTheme(
         dynamicColor = false
     ) {
-        ProTopAppBar(
+        ProMediumTopAppBar(
             title = "Title"
         )
     }
@@ -77,11 +77,11 @@ fun ProTopAppBarPreview() {
 
 @UiThemePreview
 @Composable
-fun ProTopAppBarWithNavigationIconPreview() {
+fun ProMediumTopAppBarWithNavigationIconPreview() {
     CatalogTheme(
         dynamicColor = false
     ) {
-        ProTopAppBar(
+        ProMediumTopAppBar(
             title = "Title",
             navigationIcon = ProImageVector(
                 imageVector = Icons.Default.Add
@@ -92,11 +92,11 @@ fun ProTopAppBarWithNavigationIconPreview() {
 
 @UiThemePreview
 @Composable
-fun ProTopAppBarWithActionsPreview() {
+fun ProMediumTopAppBarWithActionsPreview() {
     CatalogTheme(
         dynamicColor = false
     ) {
-        ProTopAppBar(
+        ProMediumTopAppBar(
             title = "Title",
             actions = mapOf(
                 "action1" to ProImageVector(
@@ -112,11 +112,11 @@ fun ProTopAppBarWithActionsPreview() {
 
 @UiThemePreview
 @Composable
-fun ProTopAppBarWithNavigationIconAndActionsPreview() {
+fun ProMediumTopAppBarWithNavigationIconAndActionsPreview() {
     CatalogTheme(
         dynamicColor = false
     ) {
-        ProTopAppBar(
+        ProMediumTopAppBar(
             title = "Title",
             navigationIcon = ProImageVector(
                 imageVector = Icons.Default.Add
